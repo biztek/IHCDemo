@@ -1,0 +1,8 @@
+.list-group-item {
+border: none !important;
+padding: 3px;
+}
+.list-group a{
+    font-size: 14px;
+    color: gray;
+}

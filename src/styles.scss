@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'variables.scss';
+
+@font-face {
+    font-family: myFont;
+    src: url('./assets/Lato/Lato-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: myFont !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.relative{
+    position: realtive;
+}
+
+a.app-link{
+    color: #2E6021 !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+}
+
+a.app-link:hover{
+    text-decoration: none !important;
+    background: none !important;
+    border-bottom: 2px solid #2E6021;
+}
+
+.background-lite{
+    background: $bgGray !important;
+}
+
+.app-h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: $transform;
+}
+
+.medium-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.content {
+    font-size: $contentfont !important;
+    p {
+        margin-top: 10px;
+    }
+}
+
+.margin-t30{
+    margin-top: 30px;
+}
+
+.margin-t20{
+    margin-top: 20px;
+}
+
+.parent-flex {
+    display: flex;
+}
+
+.child-flex{
+    flex: 1;
+}

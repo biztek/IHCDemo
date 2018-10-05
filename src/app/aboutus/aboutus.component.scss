@@ -1,0 +1,71 @@
+@import '../../variables.scss'; 
+
+.app-mission {
+    .section1 {
+        height: 600px;
+        position: relative;
+        font-family: $font;
+        .mission-card {
+            background: $white;
+            position: relative;
+            top: 35%;
+            margin-left: 35px;
+            padding: 15px 20px;
+            .title {
+                font-weight: 400;
+                font-size: 24px;
+                text-transform: $transform;
+            }
+            .content{
+                margin-top: 20px;
+                font-size: $contentfont;
+                text-align: justify;
+            }
+        }
+        .sponsor-card {
+            margin-top: 100px;
+            margin-right: 40px;
+            img {
+                margin-left: 25px;
+                margin-bottom: 25px;
+                border: 4px solid $white;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .section2 {
+        padding: 50px 20px;
+        .medium-title {
+            margin-bottom: 20px;
+        }
+        .box-part {
+            background: white;
+            padding: 45px 20px;
+            margin-top: 30px;
+            .title{
+                h4 {
+                    color: $green;
+                    font-size: 24px !important;
+                }
+            }
+            .icon {
+                color: $green;
+            }
+        }
+    }
+
+    .section1::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: url('/src/assets/images/mbg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.5;
+    }
+}

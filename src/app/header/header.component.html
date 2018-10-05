@@ -1,122 +1,96 @@
-<nav class="site-header py-1">
-  <div class="row m-0 p-0">
-    <a class="pt-2 w-auto pl-2" href="#">
-      <img src="/src/resources/logo.png" width="86" height="139">
-    </a>
-    <div class="text-left w-auto mt-3 ttext ml-3">
-      <h3> INDIAN HEALTH CENTER</h3>
-      <h5>OF SANTA CLARA VALLEY</h5>
-      <p>WHERE EVERYONE IS WELCOME!</p>
+<div class="col-xs-12 app-header navbar no-padding">
+    <div class="col-xs-12 navbar-header">
+        <img src="/assets/images/logo.png" class="navbar-brand app-logo" height="90"/>
+        <h1 class="h1-heading">
+            Indian Health Center
+            <span class="app-mini-heading">of Santa Clara Valley</span><br/>
+            <span class="app-tag-heading">Where Everyone is Welcome!</span>
+        </h1>
+
+        <ul class="nav navbar-nav pull-right header-menu">
+            <li><a class="pull-right app-link" href="#">IHC Patient Portal</a></li>
+            <li><a class="pull-right app-link" href="#">Donate now</a></li>
+        </ul>
     </div>
-    <div class="w-auto sicon">
-      <i class="fab fa-facebook-square fa-2x px-1" style="color:#3b5999;"></i>
-      <i class="fab fa-twitter-square fa-2x px-1" style="color:#55acee;"></i>
-      <i class="fab fa-google-plus-square fa-2x px-1" style="color:#dd4b39;"></i>
-      <i class="fab fa-blogger fa-2x px-1" style="color:#f57d00;"></i>
+    <div class="col-xs-12 background-lite menu-list no-padding">
+        <ul class="nav navbar-nav col-xs-12">
+            <li><a href="#" [routerLink]="['/home']">Home</a></li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">About Us</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" [routerLink]="['/aboutus']">Mission Statement</a></li>
+                    <li><a href="#">IHC History</a></li>
+                    <li><a href="#">Board of Directors</a></li>
+                    <li><a href="#">Staff Directory</a></li>
+                    <li><a href="#">Collaborative Partners</a></li>
+                    <li><a href="#">Funders</a></li>
+                    <li><a href="#">Donors</a></li>
+                    <li><a href="#">Accreditation</a></li>
+                    <li><a href="#">Financials</a></li>
+                    <li><a href="#">IHC Brochure</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">Services and Programs</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Community Wellness &amp; Outreach(CWO)</a></li>
+                    <li><a href="#">Counseling</a></li>
+                    <li><a href="#">Dental</a></li>
+                    <li><a href="#">Medical</a></li>
+                    <li><a href="#">WIC/Nutrition</a></li>
+                    <li><a href="#">New Patient Information</a></li>
+                    <li><a href="#">American Indian Patient Relations</a></li>
+                    <li><a href="#">Patient Success Stories</a></li>
+                    <li><a href="#">Patient Rights &amp; Responsibilities</a></li>
+                    <li><a href="#">HIPAA</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">Get Involved</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" target="_blank">Careers</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Events &amp; Fundraisers</a></li>
+                    <li><a href="#">Volunteer Opportunities</a></li>
+                    <li><a href="#">Newsletters</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Customer Satisfaction Survey</a></li>
+                    <li><a href="#">Comments/Suggestions</a></li>
+                    <li><a href="#">Join our Mailing List</a></li>
+                    <li><a href="#">IHC's Wish List</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">Appointments</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Medical Appointment</a></li>
+                    <li><a href="#">Dental Appointment</a></li>
+                    <li><a href="#">Cita Medica</a></li>
+                    <li><a href="#">Cita con Dentista</a></li>
+                    <li><a href="#" target="_blank">IHC Patient
+                        Portal</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">Resources</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" target="_blank">Find Health Coverage</a></li>
+                    <li><a href="#">American Indian Resources</a></li>
+                    <li><a href="#">Frequently Asked Questions</a></li>
+                    <li><a href="#">IHC Archives</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">Contact</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Staff Directory</a></li>
+                </ul>
+            </li>
+            <li class="pull-right relative">
+                <span class="fa fa-search search-icon"></span>
+                <input type="text" class="form-control search-input" placeholder="Search" />
+            </li>
+        </ul>
     </div>
-  </div>
-  <div class="d-flex flex-column flex-md-row justify-content-between row align-items-center m-0">
-    <nav class="navbar navbar-expand-sm bg-light navbar-light w-100">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link " data-toggle="dropdown" href="#">About Us</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Mission Statement</a></li>
-            <li><a href="#">IHC History</a></li>
-            <li><a href="#">Board of Directors</a></li>
-            <li><a href="#">Staff Directory</a></li>
-            <li><a href="#">Collaborative Partners</a></li>
-            <li><a href="#">Funders</a></li>
-            <li><a href="#">Donors</a></li>
-            <li><a href="#">Accreditation</a></li>
-            <li><a href="#">Financials</a></li>
-            <li><a href="#">IHC Brochure</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" data-toggle="dropdown" href="#">Service & Programs</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Community
-                Wellness &amp; Outreach
-                (CWO)</a></li>
-            <li><a href="#">Counseling</a></li>
-            <li><a href="#">Dental</a></li>
-            <li><a href="#">Medical</a></li>
-            <li><a href="#">WIC/Nutrition</a></li>
-            <li><a href="#">New Patient
-                Information</a></li>
-            <li><a href="#">American
-                Indian Patient Relations</a></li>
-            <li><a href="#">Patient Success
-                Stories</a></li>
-            <li><a href="#">Patient
-                Rights &amp;
-                Responsibilities</a></li>
-            <li><a href="#">HIPAA</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link " data-toggle="dropdown" href="#">Get Involved</a>
-          <ul class="dropdown-menu">
-            <li><a href="#" target="_blank">Careers</a></li>
-            <li><a href="#">Donate</a></li>
-            <li><a href="#">Events &amp; Fundraisers</a></li>
-            <li><a href="#">Volunteer Opportunities</a></li>
-            <li><a href="#">Newsletters</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Customer Satisfaction
-                Survey</a></li>
-            <li><a href="#">Comments/Suggestions</a></li>
-            <li><a href="#">Join our Mailing List</a></li>
-            <li><a href="#">IHC's Wish List</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link " data-toggle="dropdown" href="#">Appointments</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Medical Appointment</a></li>
-            <li><a href="#">Dental Appointment</a></li>
-            <li><a href="#">Cita Medica</a></li>
-            <li><a href="#">Cita con Dentista</a></li>
-            <li><a href="#" target="_blank">IHC Patient
-                Portal</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link " data-toggle="dropdown" href="#">Resources</a>
-          <ul class="dropdown-menu">
-            <li><a href="#" target="_blank">Find Health Coverage</a></li>
-            <li><a href="#">American Indian Resources</a></li>
-            <li><a href="#">Frequently Asked Questions</a></li>
-            <li><a href="#">IHC Archives</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link " data-toggle="dropdown" href="#">Contact</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Locations</a></li>
-            <li><a href="#">Staff Directory</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Patient Portal</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Donate</a>
-        </li>
-        <li>
-          <div class="input-group ml-4">
-            <input type="text" class="form-control form-control-sm" placeholder="Search" aria-label="Recipient's username"
-              aria-describedby="basic-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary btn-sm" type="button"><i class="fas fa-search px-1" style="color:#f57d00;"></i></button>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</nav>
+</div>

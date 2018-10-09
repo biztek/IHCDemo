@@ -2,10 +2,14 @@
 
 .app-header{
     border-bottom: 1px solid $gray;
-    // height: 120px;
     margin-bottom: 0;
-    .navbar-brand {
+    .main-header {
         height: 120px !important;
+        .navbar-brand {
+            height: 90px;
+            position: relative;
+            top: -30px;
+        }
     }
     .h1-heading {
         display: inline-block;
@@ -13,7 +17,8 @@
         font-weight: bold;
         margin-left: 20px;
         position: relative;
-        .app-mini-heading{
+        margin-top: 10px;
+        .app-mini-heading {
             font-size: 18px !important;
             text-transform: none !important;
         }
@@ -23,6 +28,7 @@
         }
     }
     .header-menu {
+        margin-top: 10px;
         li {
             margin-top: 35px;
             margin-left: 30px;
@@ -32,32 +38,31 @@
         }
     }
     .menu-list{
-        .navbar-nav {
-            li {
-                padding: 10px;
-                a {
-                    font-weight: bold;
-                    color: $black !important;
-                    font-size: 17px;
-                    text-transform: uppercase;
-                }
-                .search-icon {
-                    position: absolute;
-                    font-size: 20px;
-                    top: 22px;
-                    color: $green;
-                }
-                .search-input {
-                    height: 45px;
-                    border: none !important;
-                    font-size: 18px;
-                    outline: none !important;
-                    width: 300px;
-                    padding-left: 30px;
-                    box-shadow: none !important;
-                    background: $bgGray;
-                    border-bottom: 1px solid $black !important;
-                }
+        height: 65px;
+        li {
+            padding: 10px !important;
+            a {
+                font-weight: bold;
+                color: $black !important;
+                font-size: 17px;
+                text-transform: uppercase;
+            }
+            .search-icon {
+                position: absolute;
+                font-size: 20px;
+                top: 22px;
+                color: $green;
+            }
+            .search-input {
+                height: 45px;
+                border: none !important;
+                font-size: 18px;
+                outline: none !important;
+                width: 300px;
+                padding-left: 30px;
+                box-shadow: none !important;
+                background: $bgGray;
+                border-bottom: 1px solid $black !important;
             }
         }
     }

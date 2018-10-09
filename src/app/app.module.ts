@@ -7,6 +7,14 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { HistoryComponent } from './history/history.component';
+import { MedicalAppointmentComponent } from './medical-appointment/medical-appointment.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {
+  MatButtonModule,
+  MatFormFieldModule,
+  MatInputModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -14,12 +22,19 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    AboutusComponent
+    AboutusComponent,
+    HistoryComponent,
+    MedicalAppointmentComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

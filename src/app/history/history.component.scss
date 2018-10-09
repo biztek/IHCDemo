@@ -1,13 +1,121 @@
 @import '../../variables.scss'; 
 
-.app-history{
-    padding-left: 35px;
-    padding-right: 35px;
-    .app-h1 {
-        color: $green;
-    }
-    .title {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
+.carousel-caption{
+    font-size: 16px;
+}
+.sl1{
+    width: 980px;
+    height: 304px;
+    margin: 0px auto;
+    border: 5px solid #fff;
+}
+.sl1bg{
+    background-color: lightblue !important;
+}
+.nav.nav-justified > li > a { position: relative;width: 250px; }
+.nav.nav-justified > li > a:hover,
+.nav.nav-justified > li > a:focus { background-color: transparent; }
+.nav.nav-justified > li > a > .quote {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    opacity: 0;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: #13c0ba;
+    border-radius: 15px;
+    color: #fff;  
+}
+.nav.nav-justified > li.active > a > .quote { opacity: 1; }
+.nav.nav-justified > li > a > img { box-shadow: 0 0 0 5px #13c0ba; }
+.nav.nav-justified > li > a > img { 
+    
+    opacity: .3; 
+    -webkit-transform: scale(.3,.3);
+            transform: scale(.3,.3);
+    -webkit-transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.nav.nav-justified > li.active > a > img,
+.nav.nav-justified > li:hover > a > img,
+.nav.nav-justified > li:focus > a > img { 
+    opacity: 1; 
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.tab-pane .tab-inner { padding: 30px 0 20px; }
+
+
+.sl2 .carousel-control-next, .sl2 .carousel-control-prev {
+
+}
+.sl2{
+    height: 350px;
+    overflow-y: auto;
+}
+.s2img{
+    border: 5px solid #ffffff;
+    box-shadow: 0px 8px 6px -8px #000;
+    border-radius: 5px;
+}
+.cbg{
+background-color: bisque;
+}
+.cbg2{
+background-color: #ffd29c;
+}
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #4b7c3f;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+.hbg{
+    background-image:  url("/src/resources/hbg.jpg");
+    background-position: center; 
+    height: 560px;
+}
+.hbg p{
+    line-height: 2rem;
+}
+.bgt{
+    background-color: #ffffff52;
+}
+.text-success {
+    color: #005d15!important;
+}
+.bgocc{
+    background-image:  url("/src/resources/bgocc.jpg");
+    background-position: center; 
+    height: 615px;
+}
+.bgt2{
+    background-color: #ffffffa6;
 }

@@ -1,0 +1,13 @@
+@import '../../variables.scss'; 
+
+.app-history{
+    padding-left: 35px;
+    padding-right: 35px;
+    .app-h1 {
+        color: $green;
+    }
+    .title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}

@@ -15,6 +15,7 @@ import {
   MatFormFieldModule,
   MatInputModule
 } from '@angular/material';
+import { MissionStatementComponent } from './aboutus/mission-statement/mission-statement.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {
     HomeComponent,
     AboutusComponent,
     HistoryComponent,
-    MedicalAppointmentComponent
+    MedicalAppointmentComponent,
+    MissionStatementComponent
   ],
   imports: [
     BrowserModule,

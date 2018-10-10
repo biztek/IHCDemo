@@ -5,6 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { MissionStatementComponent } from './aboutus/mission-statement/mission-statement.component';
 import { HistoryComponent } from './history/history.component';
 import { MedicalAppointmentComponent } from './medical-appointment/medical-appointment.component';
+import { BoardDirectorsComponent } from './aboutus/board-directors/board-directors.component';
+import { StaffDirectoryComponent } from './aboutus/staff-directory/staff-directory.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -12,6 +14,8 @@ const routes: Routes = [
   {path: 'mission-statement',component: MissionStatementComponent },
   {path: 'history', component: HistoryComponent},
   {path: 'medicalAppointment', component: MedicalAppointmentComponent},
+  {path: 'board-directors', component: BoardDirectorsComponent},
+  {path: 'staff-directory', component: StaffDirectoryComponent},
 ];
 
 @NgModule({

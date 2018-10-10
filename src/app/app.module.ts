@@ -16,6 +16,9 @@ import {
   MatInputModule,
   MatRadioModule
 } from '@angular/material';
+import { MissionStatementComponent } from './aboutus/mission-statement/mission-statement.component';
+import { BoardDirectorsComponent } from './aboutus/board-directors/board-directors.component';
+import { StaffDirectoryComponent } from './aboutus/staff-directory/staff-directory.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import {
     HomeComponent,
     AboutusComponent,
     HistoryComponent,
-    MedicalAppointmentComponent
+    MedicalAppointmentComponent,
+    MissionStatementComponent,
+    BoardDirectorsComponent,
+    StaffDirectoryComponent
   ],
   imports: [
     BrowserModule,

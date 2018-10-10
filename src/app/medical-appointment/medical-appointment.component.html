@@ -1,11 +1,67 @@
-<div class="col-12">
-  <form class="example-form">
-    <mat-form-field class="example-full-width">
-      <input matInput placeholder="Favorite food" value="Sushi">
-    </mat-form-field>
+<div class="col-12 no-padding app-medical">
+  <div class="row py-5 background-lite">
+    <h1 class="app-h1 col-12 text-center text-green">Medical Appointment</h1>
+    <h4 class="col-12 text-center text-green pt-1">Welcome To The Indian Health Center of Santa Clara Valley</h4>
+    <div class="container mt-3 px-auto py-5 shadow-lg appointment-container">
+      <div class="mb-3">
+        <span class="content">The online appointment system is intended for established patients only. &nbsp;</span>
+        <span class="small">(Established means patients that have been seen in the medical department by a provider.)</span>
+      </div>
+      <div class="w-100">
+        <mat-form-field class="col-12 col-sm-6">
+          <input matInput placeholder="First name">
+        </mat-form-field>
+      
+        <mat-form-field class="col-12 col-sm-6">
+          <input matInput placeholder="Last name">
+        </mat-form-field>
 
-    <mat-form-field class="example-full-width">
-      <textarea matInput placeholder="Leave a comment"></textarea>
-    </mat-form-field>
-  </form>
+        <mat-form-field class="col-12 col-sm-6">
+            <input matInput type="date" placeholder="DOB">
+        </mat-form-field>
+
+        <mat-form-field class="col-12 col-sm-6">
+            <input matInput type="tel" placeholder="Telephone">
+        </mat-form-field>
+
+        <mat-form-field class="col-12 col-sm-6">
+            <input matInput type="email" placeholder="Email">
+        </mat-form-field>
+        <br/><br/>
+        <mat-radio-group class="col-12 mt-4">
+            <div class="content col-12 mb-4"> Who is your primary care provider ?</div>
+            <mat-radio-button value="1" class="col-6 col-sm-4 col-lg-3">Option 1</mat-radio-button>
+            <mat-radio-button value="2" class="col-6 col-sm-4 col-lg-3">Option 2</mat-radio-button>
+            <mat-radio-button value="1" class="col-6 col-sm-4 col-lg-3">Option 1</mat-radio-button>
+            <mat-radio-button value="2" class="col-6 col-sm-4 col-lg-3">Option 2</mat-radio-button>
+            <mat-radio-button value="1" class="col-6 col-sm-4 col-lg-3">Option 1</mat-radio-button>
+            <mat-radio-button value="2" class="col-6 col-sm-4 col-lg-3">Option 2</mat-radio-button>
+            <mat-radio-button value="1" class="col-6 col-sm-4 col-lg-3">Option 1</mat-radio-button>
+            <mat-radio-button value="2" class="col-6 col-sm-4 col-lg-3">Option 2</mat-radio-button>
+            <mat-radio-button value="1" class="col-6 col-sm-4 col-lg-3">Option 1</mat-radio-button>
+            <mat-radio-button value="2" class="col-6 col-sm-4 col-lg-3">Option 2</mat-radio-button>
+            <mat-radio-button value="1" class="col-6 col-sm-4 col-lg-3">Option 1</mat-radio-button>
+            <mat-radio-button value="2" class="col-6 col-sm-4 col-lg-3">Option 2</mat-radio-button>
+            <mat-radio-button value="1" class="col-6 col-sm-4 col-lg-3">Option 1</mat-radio-button>
+            <mat-radio-button value="2" class="col-6 col-sm-4 col-lg-3">Option 2</mat-radio-button>
+            <mat-radio-button value="1" class="col-6 col-sm-4 col-lg-3">Option 1</mat-radio-button>
+            <mat-radio-button value="2" class="col-6 col-sm-4 col-lg-3">Option 2</mat-radio-button>
+            <mat-radio-button value="1" class="col-6 col-sm-4 col-lg-3">Option 1</mat-radio-button>
+            <mat-radio-button value="2" class="col-6 col-sm-4 col-lg-3">Option 2</mat-radio-button>
+        </mat-radio-group>
+
+        <br/><br/>
+        <mat-radio-group class="col-12 mt-4">
+            <div class="content col-12 mb-4"> What type of appointment?</div>
+            <mat-radio-button value="1" class="col-12">Physical with your primary care provider</mat-radio-button>
+            <mat-radio-button value="2" class="col-12">Office visit for all other non-urgnet concerns</mat-radio-button>
+            <mat-radio-button value="1" class="col-12">Return or follow up appointment for an existing medical problem</mat-radio-button>
+        </mat-radio-group>
+        
+        <br/><br/>
+        <div class="content col-12">Please provide us couple of dates and times that you are available. Otherwise, we will assign the earliest available date and time for you.</div>
+        
+      </div>
+    </div>
+  </div>
 </div>

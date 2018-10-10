@@ -1,6 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'variables.scss';
 
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 @font-face {
     font-family: myFont;
     src: url('./assets/Lato/Lato-Regular.ttf') format('truetype');
@@ -80,6 +86,11 @@ a.app-link:hover{
     text-align: justify !important;
 }
 
+.text-green {
+    color: $green !important;
+}
+
 .margin-t10 {
     margin-top: 10px !important;
 }
+

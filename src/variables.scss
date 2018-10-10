@@ -1,3 +1,7 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
 $green: #2E6021;
 $red: #980000;
 $black: #000;
@@ -7,3 +11,7 @@ $gray: #D8DADA;
 $font: myFont;
 $transform: uppercase;
 $contentfont: 18px;
+
+@include media-breakpoint-down(xs) { 
+    $contentfont: 15px;
+}

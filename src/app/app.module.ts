@@ -13,9 +13,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {
   MatButtonModule,
   MatFormFieldModule,
-  MatInputModule
+  MatInputModule,
+  MatRadioModule
 } from '@angular/material';
-import { MissionStatementComponent } from './aboutus/mission-statement/mission-statement.component';
 
 @NgModule({
   declarations: [
@@ -25,8 +25,7 @@ import { MissionStatementComponent } from './aboutus/mission-statement/mission-s
     HomeComponent,
     AboutusComponent,
     HistoryComponent,
-    MedicalAppointmentComponent,
-    MissionStatementComponent
+    MedicalAppointmentComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +35,8 @@ import { MissionStatementComponent } from './aboutus/mission-statement/mission-s
     ReactiveFormsModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

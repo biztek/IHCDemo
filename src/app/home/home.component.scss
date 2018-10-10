@@ -1,16 +1,17 @@
 @import '../../variables.scss'; 
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
 
 .app-home-page {
     .section1 {
-        height: 600px;
+        height: auto;
         position: relative;
         font-family: $font;
         .welcome-card {
             background: $white;
-            margin-top: 100px;
-            margin-left: 35px;
+            // margin-left: 35px;
             padding: 15px 20px;
-            height: 400px;
             .title {
                 font-weight: 400;
                 font-size: 24px;
@@ -22,19 +23,35 @@
                 text-align: justify;
             }
         }
+        @include media-breakpoint-down(xs) { 
+            .sponsor-card {
+                margin-top: 20px;
+            }
+        }
         .sponsor-card {
-            margin-top: 100px;
             img {
                 margin-left: 25px;
                 margin-bottom: 25px;
                 border: 4px solid $green;
                 border-radius: 10px;
             }
+            @include media-breakpoint-down(sm) { 
+                img {
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+            @include media-breakpoint-down(xs) { 
+                img {
+                    margin-left: 5px;
+                    border: 2px solid $green;
+                }
+            }
         }
     }
 
     .section2 {
-        padding: 50px 20px;
+        // padding: 50px 20px;
         .service-card{
             background: $white;
             padding-top: 10px;
@@ -50,11 +67,22 @@
                 margin-left: auto;
                 margin-right: auto;
             }
+
+            @include media-breakpoint-down(sm) {
+                .title {
+                    font-size: 20px;
+                }
+            }
+            @include media-breakpoint-down(xs) {
+                .title {
+                    font-size: 16px;
+                }
+            }
         }
     }
 
     .section3 {
-        padding: 50px 20px;
+        // padding: 50px 20px;
         background: $green;
         color: $white;
         .app-h1 {
@@ -74,7 +102,7 @@
     }
 
     .section4 {
-        padding: 50px 20px;
+        // padding: 50px 20px;
         .service-card{
             background: $white;
             padding-top: 20px;
@@ -92,6 +120,56 @@
                 border-bottom: 1px solid $green;
             }
         }
+    }
+
+    .section-carousel {
+        height: auto;
+        position: relative;
+        font-family: $font;
+        .carousel {
+            margin-left: auto;
+            margin-right: auto;
+            // padding: 2em;
+        }
+        .carousel-item{
+            border: 5px solid $green;
+            border-radius: 10px;
+            img {
+                height: 450px;
+            }
+            @include media-breakpoint-down(sm) { 
+                img {
+                    height: 350px;
+                }
+            }
+            @include media-breakpoint-down(xs) { 
+                img {
+                    height: 250px;
+                }
+            }
+        }
+        .carousel-caption {
+            background: rgba(255, 255, 255, .8);
+            color: $green !important;
+            border-radius: 10px;
+        }
+        .carousel-caption:after {
+            opacity: 0.5;
+        }
+    }
+
+    .section-carousel:after {
+        content:"";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: url("/src/assets/images/carousel_home/background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.5;
     }
 
     .section1::after {

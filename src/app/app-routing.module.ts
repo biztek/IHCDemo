@@ -8,6 +8,7 @@ import { MedicalAppointmentComponent } from './medical-appointment/medical-appoi
 import { BoardDirectorsComponent } from './aboutus/board-directors/board-directors.component';
 import { StaffDirectoryComponent } from './aboutus/staff-directory/staff-directory.component';
 import { MissionStatementComponent } from './aboutus/mission-statement/mission-statement.component';
+import { CollaborativePartnersComponent } from './aboutus/collaborative-partners/collaborative-partners.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'board-directors', component: BoardDirectorsComponent},
   {path: 'staff-directory', component: StaffDirectoryComponent},
   {path: 'mission-statement', component: MissionStatementComponent},
+  {path: 'collaborative-partners', component: CollaborativePartnersComponent},
 ];
 
 @NgModule({

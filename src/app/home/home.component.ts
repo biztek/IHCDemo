@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import { templateJitUrl } from '@angular/compiler';
 
 @Component({
@@ -7,4 +7,12 @@ import { templateJitUrl } from '@angular/compiler';
     styleUrls: ['./home.component.scss']
 })
 
-export class HomeComponent {}
+export class HomeComponent {
+
+    constructor(private renderer: Renderer2){};
+
+    addAnimation(event, animationClass) {
+        if(event.visible) this.renderer.addClass(event.target, animationClass);
+        if(!event.visible) this.renderer.removeClass(event.target, animationClass);
+    }
+}

@@ -10,6 +10,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { HistoryComponent } from './history/history.component';
 import { MedicalAppointmentComponent } from './medical-appointment/medical-appointment.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InViewportModule } from 'ng-in-viewport';
+
 import {
   MatButtonModule,
   MatFormFieldModule,
@@ -44,7 +46,8 @@ import { CollaborativePartnersComponent } from './aboutus/collaborative-partners
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
-    MatRadioModule
+    MatRadioModule,
+    InViewportModule
   ],
   providers: [],
   bootstrap: [AppComponent]

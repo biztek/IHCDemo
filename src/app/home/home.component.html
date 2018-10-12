@@ -48,8 +48,8 @@
         </div>
     </div>
     <div class="section1 row py-5 px-auto">
-        <div class="welcome-card col-11 col-sm-7 mx-auto">
-            <div class="title">Welcome to IHC</div>
+        <div class="welcome-card col-11 col-sm-7 mx-auto animated fast" inViewport (inViewportAction)="addAnimation($event, 'slideInLeft')">
+            <div class="title">Welcome to IHC {{section1}}</div>
             <div class="content">
                 <p>The Indian Health Center of Santa Clara Valley is located in San Jose, California and is a 501(c)3, non-profit, Urban Indian Health Center funded by the Indian Health Service and a 330 Federally Qualified Health Center funded by the Bureau of Primary Health Care.</p>
                 <p>IHC provides high quality, culturally competent medical and wellness services to American Indians/Alaska Natives and people from all walks of life, regardless of race, ethnicity, religion, gender, sexual orientation, or disability. We serve infants to elders and take pride in serving our diverse patients and clients!</p>
@@ -58,11 +58,11 @@
             </div>
         </div>
         <div class="col-sm-4 col-12 mx-auto sponsor-card">
-            <img class="img-fluid" src="../assets/images/sponsor_1.png"/>
-            <img class="img-fluid" src="../assets/images/sponsor_2.png"/>
-            <img class="img-fluid" src="../assets/images/sponsor_3.png"/>
-            <img class="img-fluid" src="../assets/images/sponsor_4.png"/>
-            <img class="img-fluid" src="../assets/images/sponsor_5.png"/>
+            <img class="img-fluid animated slow" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')" src="../assets/images/sponsor_1.png"/>
+            <img class="img-fluid animated slow" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')" src="../assets/images/sponsor_2.png"/>
+            <img class="img-fluid animated slow" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')" src="../assets/images/sponsor_3.png"/>
+            <img class="img-fluid animated fast" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')" src="../assets/images/sponsor_4.png"/>
+            <img class="img-fluid animated fast" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')" src="../assets/images/sponsor_5.png"/>
         </div>
     </div>
 
@@ -70,44 +70,44 @@
         <h1 class="app-h1 col-12 mb-2">Services We Provide</h1>
         <div class="row m-0 w-100">
             <div class="col-6 col-sm-4 mt-4">
-                <div class="service-card py-5 px-auto">
+                <div class="service-card py-5 px-auto" (mouseover)="mouseOvered = true; divID = 1;" (mouseout)="mouseOvered = false; divID = -1;">
                     <div class="title">Medical</div>
-                    <img class="image img-fluid" src="../assets/images/services_1.jpg" />
+                    <img class="image img-fluid animated" [class.rotateIn]="mouseOvered && divID == 1" src="../assets/images/services_1.jpg" />
                 </div>
             </div>
 
             <div class="col-6 col-sm-4 mt-4">
-                <div class="service-card py-5 px-auto">
+                <div class="service-card py-5 px-auto" (mouseover)="mouseOvered = true; divID = 2;" (mouseout)="mouseOvered = false; divID = -1;">
                     <div class="title">Dental</div>
-                    <img class="image img-fluid" src="../assets/images/services_2.jpg" />
+                    <img class="image img-fluid animated" [class.rotateIn]="mouseOvered && divID == 2" src="../assets/images/services_2.jpg" />
                 </div>
             </div>
 
             <div class="col-6 col-sm-4 mt-4">
-                <div class="service-card py-5 px-auto">
+                <div class="service-card py-5 px-auto" (mouseover)="mouseOvered = true; divID = 3;" (mouseout)="mouseOvered = false; divID = -1;">
                     <div class="title">Counseling</div>
-                    <img class="image img-fluid" src="../assets/images/services_3.jpg" />
+                    <img class="image img-fluid animated" [class.rotateIn]="mouseOvered && divID == 3" src="../assets/images/services_3.jpg" />
                 </div>
             </div>
 
             <div class="col-6 col-sm-4 mt-4">
-                <div class="service-card py-5 px-auto">
+                <div class="service-card py-5 px-auto" (mouseover)="mouseOvered = true; divID = 4;" (mouseout)="mouseOvered = false; divID = -1;">
                     <div class="title">WIC/Nutrition</div>
-                    <img class="image img-fluid" src="../assets/images/services_4.jpg" />
+                    <img class="image img-fluid animated" [class.rotateIn]="mouseOvered && divID == 4" src="../assets/images/services_4.jpg" />
                 </div>
             </div>
 
             <div class="col-6 col-sm-4 mt-4">
-                <div class="service-card py-5 px-auto">
+                <div class="service-card py-5 px-auto" (mouseover)="mouseOvered = true; divID = 5;" (mouseout)="mouseOvered = false; divID = -1;">
                     <div class="title">Community Wellness & Organization</div>
-                    <img class="image img-fluid" src="../assets/images/services_5.jpg" />
+                    <img class="image img-fluid animated" [class.rotateIn]="mouseOvered && divID == 5" src="../assets/images/services_5.jpg" />
                 </div>
             </div>
 
             <div class="col-6 col-sm-4 mt-4">
-                <div class="service-card py-5 px-auto">
+                <div class="service-card py-5 px-auto" (mouseover)="mouseOvered = true; divID = 6;" (mouseout)="mouseOvered = false; divID = -1;">
                     <div class="title">Find Health Coverage</div>
-                    <img class="image img-fluid" src="../assets/images/services_6.jpg" />
+                    <img class="image img-fluid animated" [class.rotateIn]="mouseOvered && divID == 6" src="../assets/images/services_6.jpg" />
                 </div>
             </div>
 

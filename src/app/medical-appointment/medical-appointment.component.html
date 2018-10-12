@@ -1,9 +1,9 @@
 <div class="col-12 no-padding app-medical">
-  <div class="row py-5 background-lite">
-    <h1 class="app-h1 col-12 text-center text-green">Medical Appointment</h1>
-    <h4 class="col-12 text-center text-green pt-1">Welcome To The Indian Health Center of Santa Clara Valley</h4>
-    <div class="container mt-3 px-auto py-5 shadow-lg appointment-container">
-      <div class="mb-3">
+  <div class="row py-5 background-white">
+    <div class="container mt-3 px-auto py-5 shadow-lg appointment-container animated slideInDown slow">
+      <h1 class="app-h1 col-12 text-center text-green">Medical Appointment</h1>
+      <h4 class="col-12 text-center text-green pt-1">Welcome To The Indian Health Center of Santa Clara Valley</h4>
+      <div class="mb-5 col-12 mt-5">
         <span class="content">The online appointment system is intended for established patients only. &nbsp;</span>
         <span class="small">(Established means patients that have been seen in the medical department by a provider.)</span>
       </div>
@@ -60,7 +60,24 @@
         
         <br/><br/>
         <div class="content col-12">Please provide us couple of dates and times that you are available. Otherwise, we will assign the earliest available date and time for you.</div>
-        
+        <div class="mt-4">
+          <mat-form-field class="col-12 col-sm-6">
+            <input matInput type="date" placeholder="Request Date 1">
+          </mat-form-field>
+          <mat-form-field class="col-12 col-sm-6">
+            <input matInput type="time" placeholder="Request Time 1">
+          </mat-form-field>
+          <mat-form-field class="col-12 col-sm-6">
+            <input matInput type="date" placeholder="Request Date 2">
+          </mat-form-field>
+          <mat-form-field class="col-12 col-sm-6">
+            <input matInput type="time" placeholder="Request Time 2">
+          </mat-form-field>
+        </div>
+
+        <div class="col-12 mt-4">
+          <button class="btn btn-primary">Submit</button>
+        </div>
       </div>
     </div>
   </div>

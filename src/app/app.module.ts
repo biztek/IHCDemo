@@ -20,6 +20,8 @@ import { MissionStatementComponent } from './aboutus/mission-statement/mission-s
 import { BoardDirectorsComponent } from './aboutus/board-directors/board-directors.component';
 import { StaffDirectoryComponent } from './aboutus/staff-directory/staff-directory.component';
 import { CollaborativePartnersComponent } from './aboutus/collaborative-partners/collaborative-partners.component';
+import { ServicesProgramsComponent } from './services-programs/services-programs.component';
+import { CommunityWellnessComponent } from './services-programs/community-wellness/community-wellness.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { CollaborativePartnersComponent } from './aboutus/collaborative-partners
     MissionStatementComponent,
     BoardDirectorsComponent,
     StaffDirectoryComponent,
-    CollaborativePartnersComponent
+    CollaborativePartnersComponent,
+    ServicesProgramsComponent,
+    CommunityWellnessComponent
   ],
   imports: [
     BrowserModule,

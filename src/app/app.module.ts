@@ -22,6 +22,7 @@ import { MissionStatementComponent } from './aboutus/mission-statement/mission-s
 import { BoardDirectorsComponent } from './aboutus/board-directors/board-directors.component';
 import { StaffDirectoryComponent } from './aboutus/staff-directory/staff-directory.component';
 import { CollaborativePartnersComponent } from './aboutus/collaborative-partners/collaborative-partners.component';
+import { LocationsComponent } from './contact/locations/locations.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { CollaborativePartnersComponent } from './aboutus/collaborative-partners
     MissionStatementComponent,
     BoardDirectorsComponent,
     StaffDirectoryComponent,
-    CollaborativePartnersComponent
+    CollaborativePartnersComponent,
+    LocationsComponent
   ],
   imports: [
     BrowserModule,

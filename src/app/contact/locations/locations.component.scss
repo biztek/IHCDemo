@@ -1,0 +1,32 @@
+@import '~../../../variables.scss';
+
+.app-locations-page{
+    font-family: $font;
+    .title {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .location-card{
+        background: rgba(255, 255, 255, 0.7);
+        height: 100%;
+        border-radius: 10px;
+        border: 1px solid $green;
+    }
+    .section1{
+        height: auto;
+        position: relative;
+    }
+    .section1:after {
+        content:"";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: url("../../../assets/images/contactUs.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.3;
+    }
+}

@@ -20,6 +20,10 @@ import { MissionStatementComponent } from './aboutus/mission-statement/mission-s
 import { BoardDirectorsComponent } from './aboutus/board-directors/board-directors.component';
 import { StaffDirectoryComponent } from './aboutus/staff-directory/staff-directory.component';
 import { CollaborativePartnersComponent } from './aboutus/collaborative-partners/collaborative-partners.component';
+import { FundersComponent } from './aboutus/funders/funders.component';
+import { DonorsComponent } from './aboutus/donors/donors.component';
+import { AccreditationComponent } from './aboutus/accreditation/accreditation.component';
+import { FinancialsComponent } from './aboutus/financials/financials.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +37,11 @@ import { CollaborativePartnersComponent } from './aboutus/collaborative-partners
     MissionStatementComponent,
     BoardDirectorsComponent,
     StaffDirectoryComponent,
-    CollaborativePartnersComponent
+    CollaborativePartnersComponent,
+    FundersComponent,
+    DonorsComponent,
+    AccreditationComponent,
+    FinancialsComponent
   ],
   imports: [
     BrowserModule,

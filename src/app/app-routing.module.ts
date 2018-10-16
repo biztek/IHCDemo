@@ -10,6 +10,7 @@ import { StaffDirectoryComponent } from './aboutus/staff-directory/staff-directo
 import { MissionStatementComponent } from './aboutus/mission-statement/mission-statement.component';
 import { CollaborativePartnersComponent } from './aboutus/collaborative-partners/collaborative-partners.component';
 import { LocationsComponent } from './contact/locations/locations.component';
+import { StaffDirectoryContactComponent } from './contact/staff-directory/staff-directory.component';
 import { CommunityWellnessComponent } from './services-programs/community-wellness/community-wellness.component';
 import { FundersComponent } from './aboutus/funders/funders.component';
 import { DonorsComponent } from './aboutus/donors/donors.component';
@@ -26,7 +27,8 @@ const routes: Routes = [
   {path: 'staff-directory', component: StaffDirectoryComponent},
   {path: 'mission-statement', component: MissionStatementComponent},
   {path: 'collaborative-partners', component: CollaborativePartnersComponent},
-  {path: 'locations', component: LocationsComponent}
+  {path: 'locations', component: LocationsComponent},
+  {path: 'staff-contact', component: StaffDirectoryContactComponent},
   {path: 'community-wellness', component: CommunityWellnessComponent},
   {path: 'funders', component: FundersComponent},
   {path: 'donors', component: DonorsComponent},

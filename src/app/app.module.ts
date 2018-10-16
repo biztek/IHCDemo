@@ -23,6 +23,7 @@ import { BoardDirectorsComponent } from './aboutus/board-directors/board-directo
 import { StaffDirectoryComponent } from './aboutus/staff-directory/staff-directory.component';
 import { CollaborativePartnersComponent } from './aboutus/collaborative-partners/collaborative-partners.component';
 import { LocationsComponent } from './contact/locations/locations.component';
+import { StaffDirectoryContactComponent } from './contact/staff-directory/staff-directory.component';
 import { ServicesProgramsComponent } from './services-programs/services-programs.component';
 import { CommunityWellnessComponent } from './services-programs/community-wellness/community-wellness.component';
 import { FundersComponent } from './aboutus/funders/funders.component';
@@ -44,6 +45,7 @@ import { FinancialsComponent } from './aboutus/financials/financials.component';
     StaffDirectoryComponent,
     CollaborativePartnersComponent,
     LocationsComponent,
+    StaffDirectoryContactComponent,
     ServicesProgramsComponent,
     CommunityWellnessComponent,
     FundersComponent,

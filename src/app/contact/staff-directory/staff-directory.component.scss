@@ -1,16 +1,10 @@
-@import '~../../../variables.scss';
-
-.app-locations-page{
+@import '../../../variables.scss';
+.app-staff {
     font-family: $font;
-    .title {
-        font-weight: bold;
-        font-size: 18px;
-    }
-    .location-card{
-        background: rgba(255, 255, 255, 0.7);
-        height: 100%;
-        border-radius: 10px;
+    .staff-card {
         border: 1px solid $green;
+        border-radius: 10px;
+        height: 100%;
     }
     .section1{
         height: auto;
@@ -24,9 +18,9 @@
         left: 0;
         bottom: 0;
         right: 0;
-        background: url("../../../assets/images/contactUs.jpg");
+        background: url("../../../assets/images/contactStaff.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        opacity: 0.3;
+        opacity: 0.4;
     }
 }

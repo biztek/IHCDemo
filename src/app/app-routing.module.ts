@@ -10,6 +10,10 @@ import { StaffDirectoryComponent } from './aboutus/staff-directory/staff-directo
 import { MissionStatementComponent } from './aboutus/mission-statement/mission-statement.component';
 import { CollaborativePartnersComponent } from './aboutus/collaborative-partners/collaborative-partners.component';
 import { CommunityWellnessComponent } from './services-programs/community-wellness/community-wellness.component';
+import { FundersComponent } from './aboutus/funders/funders.component';
+import { DonorsComponent } from './aboutus/donors/donors.component';
+import { AccreditationComponent } from './aboutus/accreditation/accreditation.component';
+import { FinancialsComponent } from './aboutus/financials/financials.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -22,6 +26,10 @@ const routes: Routes = [
   {path: 'mission-statement', component: MissionStatementComponent},
   {path: 'collaborative-partners', component: CollaborativePartnersComponent},
   {path: 'community-wellness', component: CommunityWellnessComponent},
+  {path: 'funders', component: FundersComponent},
+  {path: 'donors', component: DonorsComponent},
+  {path: 'accreditation', component: AccreditationComponent},
+  {path: 'financials', component: FinancialsComponent},
 ];
 
 @NgModule({

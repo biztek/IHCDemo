@@ -22,6 +22,10 @@ import { StaffDirectoryComponent } from './aboutus/staff-directory/staff-directo
 import { CollaborativePartnersComponent } from './aboutus/collaborative-partners/collaborative-partners.component';
 import { ServicesProgramsComponent } from './services-programs/services-programs.component';
 import { CommunityWellnessComponent } from './services-programs/community-wellness/community-wellness.component';
+import { FundersComponent } from './aboutus/funders/funders.component';
+import { DonorsComponent } from './aboutus/donors/donors.component';
+import { AccreditationComponent } from './aboutus/accreditation/accreditation.component';
+import { FinancialsComponent } from './aboutus/financials/financials.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +41,11 @@ import { CommunityWellnessComponent } from './services-programs/community-wellne
     StaffDirectoryComponent,
     CollaborativePartnersComponent,
     ServicesProgramsComponent,
-    CommunityWellnessComponent
+    CommunityWellnessComponent,
+    FundersComponent,
+    DonorsComponent,
+    AccreditationComponent,
+    FinancialsComponent
   ],
   imports: [
     BrowserModule,

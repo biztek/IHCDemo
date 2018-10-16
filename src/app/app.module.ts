@@ -20,6 +20,8 @@ import { MissionStatementComponent } from './aboutus/mission-statement/mission-s
 import { BoardDirectorsComponent } from './aboutus/board-directors/board-directors.component';
 import { StaffDirectoryComponent } from './aboutus/staff-directory/staff-directory.component';
 import { CollaborativePartnersComponent } from './aboutus/collaborative-partners/collaborative-partners.component';
+import { ServicesProgramsComponent } from './services-programs/services-programs.component';
+import { CommunityWellnessComponent } from './services-programs/community-wellness/community-wellness.component';
 import { FundersComponent } from './aboutus/funders/funders.component';
 import { DonorsComponent } from './aboutus/donors/donors.component';
 import { AccreditationComponent } from './aboutus/accreditation/accreditation.component';
@@ -38,6 +40,8 @@ import { FinancialsComponent } from './aboutus/financials/financials.component';
     BoardDirectorsComponent,
     StaffDirectoryComponent,
     CollaborativePartnersComponent,
+    ServicesProgramsComponent,
+    CommunityWellnessComponent,
     FundersComponent,
     DonorsComponent,
     AccreditationComponent,

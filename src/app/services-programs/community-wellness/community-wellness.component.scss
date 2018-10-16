@@ -1,0 +1,99 @@
+.cbg{
+    background-color: #205867;
+}
+.text-cust{
+    color: #205867 !important;
+}
+.tbg{
+    background-image: url("../../../assets/images/tbg.png");
+    background-position: center;
+}
+.sbg{
+    background-image: url("../../../assets/images/sbg.jpg");
+    background-position: center;
+}
+.mtxt p{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 9px;
+}
+.mtxt{
+    margin-top: -2rem;
+    z-index: 10000;
+    background-color: #a0a0a045;
+    height: 28px;
+}
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #205867;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+} 
+
+
+.carousel{
+    min-height: 390px;
+    overflow: hidden;
+}
+
+
+.carousel-indicators .active{
+    background-color: #005d15;
+}
+.px-a{
+padding-left: 10rem;
+padding-right: 10rem;
+}
+.carousel-item{
+background-color: #ffffffd6;
+min-height: 380px;
+padding: 1rem;
+}
+.box{
+    padding:60px 0px;
+}
+
+.box-part{
+    background:#FFF;
+    border-radius:0;
+    padding:60px 10px;
+    margin:30px 0px;
+    
+}
+.text{
+    margin:20px 0px;
+}
+.box i{
+    color: #366c28;
+}
+
+.title{
+    margin-top: 10px;
+}
+.c-g{
+    color: #366c28 !important;
+}

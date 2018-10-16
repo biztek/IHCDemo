@@ -9,6 +9,7 @@ import { BoardDirectorsComponent } from './aboutus/board-directors/board-directo
 import { StaffDirectoryComponent } from './aboutus/staff-directory/staff-directory.component';
 import { MissionStatementComponent } from './aboutus/mission-statement/mission-statement.component';
 import { CollaborativePartnersComponent } from './aboutus/collaborative-partners/collaborative-partners.component';
+import { CommunityWellnessComponent } from './services-programs/community-wellness/community-wellness.component';
 import { FundersComponent } from './aboutus/funders/funders.component';
 import { DonorsComponent } from './aboutus/donors/donors.component';
 import { AccreditationComponent } from './aboutus/accreditation/accreditation.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'staff-directory', component: StaffDirectoryComponent},
   {path: 'mission-statement', component: MissionStatementComponent},
   {path: 'collaborative-partners', component: CollaborativePartnersComponent},
+  {path: 'community-wellness', component: CommunityWellnessComponent},
   {path: 'funders', component: FundersComponent},
   {path: 'donors', component: DonorsComponent},
   {path: 'accreditation', component: AccreditationComponent},

@@ -1,0 +1,143 @@
+@import '~material-design-icons/iconfont/material-icons.css';
+
+.mbg {
+  background-image: url("../../assets/images/donate1.jpg");
+  background-repeat: no-repeat;
+  // background-position: center;
+  height: 560px;
+  width: auto;
+}
+
+.tl {
+  // right: 5%;
+  margin-left: 5px;
+}
+.mi-text{
+  margin-top: 15px;
+}
+.icont img {
+  border-radius: 5px;
+  margin: 5px;
+  margin-left: -25px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  border: 4px solid white;
+}
+
+.mtext {
+  height: 75%;
+  width: 58%;
+  margin: 0;
+  margin-top: 15px;
+  background-color: rgba(255, 255, 255, .4);
+}
+
+.intext {
+  font-size: 12px;
+}
+
+// .box {
+//   // padding: 60px 0px;
+//   width:1350; 
+// }
+
+.box-part {
+  background: #FFF;
+  border-radius: 0;
+  padding: 60px 10px;
+  margin: 30px 0px;
+
+}
+
+.box1 {
+  background-color: rgba(255, 255, 255, .9);
+  border-radius: 25px;
+  margin-top: -10%;
+}
+.last-p{
+  background-color: rgb(163, 202, 153);
+}
+
+.small {
+  font-size: 12px;
+  margin-top: -15px;
+  margin-left: 75px;
+}
+
+i {
+  margin-right: 10px;
+}
+
+.btn-st {
+  margin-left: 40%;
+  border-radius: 45%;
+}
+
+.example-card {
+  max-width: 100%;
+}
+
+.vl {
+  border-left: 6px solid rgb(137, 228, 137);
+  left: 0%;
+  margin-left: -3px;
+  top: 0;
+  margin-bottom: 6px;
+}
+
+mat-expansion-panel {
+  border-radius: 1%;
+}
+
+.example-header-image {
+  // background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-color: red;
+  background-size: cover;
+}
+
+.example-header-image1 {
+  background-image: url('https://images-na.ssl-images-amazon.com/images/I/71c316SucqL._SX425_.jpg');
+  background-size: cover;
+}
+
+.example-header-image3 {
+  background-image: url('http://stuffjolikes.com/wp-content/uploads/2016/11/community-and-relationships-672x339.png');
+  background-size: cover;
+}
+
+.example-header-image4 {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL1XfDsyRMcQtpRP22tAzia7X1tsnUnW3Xw4IWDGQIGW_V9ykt3A');
+  background-size: cover;
+}
+
+.material-icons {
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+.ec1 {
+  background-color: gainsboro;
+  width: 100%;
+}
+
+.ec2 {
+  // margin-left: -100px;
+  width: 100%;
+}
+
+.ec3 {
+  // margin-left: -100px;
+  width: 100%;
+}
+
+.ec4 {
+  // margin-top: -550px;
+  width: 100%;
+}
+
+.hr-ec1 {
+  background-color: coral;
+  height: 3px;
+  border: 0;
+}

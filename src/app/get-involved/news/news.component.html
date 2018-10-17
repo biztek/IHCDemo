@@ -1,0 +1,138 @@
+<!-- <div class="position-relative overflow-hidden bg-light row m-0 mbg">
+    <div class=" mtext">
+      <h4 class="display-4 font-weight-normal">Ways To Donate</h4>
+    </div>
+    <div class="box-shadow d-none d-md-block col-md-5 icont text-right">
+      <img src="../../assets/images/slide_1.jpg" alt="">
+      <img src="../../assets/images/slide_2.jpg" alt="">
+      <img src="../../assets/images/slide_3.jpg" alt="">
+      <img src="../../assets/images/slide_4.jpg" alt=""><br>
+      <img src="../../assets/images/slide_5.jpg" alt="">
+      <img src="../../assets/images/slide_6.jpg" alt="">
+      <img src="../../assets/images/slide_7.jpg" alt=""><br>
+      <img src="../../assets/images/slide_8.jpg" alt="">
+      <img src="../../assets/images/slide_1.jpg" alt=""><br>
+      <img src="../../assets/images/slide_2.jpg" alt="">
+    </div>
+  </div> -->
+  <div class="m-md-3">
+    <mat-card>
+      <!-- <div mat-card-avatar class="example-header-image"></div> -->
+      <mat-card-title class="hd">Indian Health Center of Santa Clara Valley </mat-card-title>
+      <mat-card-subtitle class="hd">CIRCLES OF CARE FUTURE GENERATIONS PROJECT</mat-card-subtitle>
+  
+  
+      <mat-card-content>
+        <mat-card class="in-card1">
+          The Indian Health Center of Santa Clara Valley is honored to announce the award of a 3-year Circles of Care
+          SAMHSA (Substance Abuse and Mental Health Services Administration) grant titled Future Generations to plan a
+          system of care for American Indian/Alaska Native (AI/AN) children (ages 0-25) and their families in Santa Clara
+          County.
+        </mat-card>
+        <br>
+        <mat-card class="in-card2">
+          Future Generations will plan and design a culturally competent holistic system of care that is family-driven
+          and youth-guided based on community input through focus groups, talking circles, key informant interviews,
+          surveys and recommendations from a Community Advisory Board (CAB). The CAB will include youth, parents, and
+          community members as well as representatives from county behavioral health, social services, juvenile justice,
+          education, and health services. Key stakeholders will be involved in the planning, implementation, and
+          community-based, participatory performance assessment.
+        </mat-card>
+        <br>
+        <mat-card class="in-card3">
+          The goal of Future Generations is to initiate a process of community healing leading to a holistic,
+          coordinated, and culturally-competent system of care for AI/AN children and their families in Santa Clara
+          County. The outcomes are to increase the capacity and effectiveness of mental health systems serving AI/ANs,
+          address the impact of historical trauma, and to promote positive mental health and wellness.
+        </mat-card>
+        <mat-card>
+        <p><b>The objectives of Future Generations are to:</b></p>
+        <mat-accordion class="example-headers-align">
+          <mat-expansion-panel class="vl" [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Develop infrastructure
+              </mat-panel-title>
+              <mat-panel-description>
+                <!-- <mat-icon>account_circle</mat-icon> -->
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>
+              Develop infrastructure for a system of care that is community based, family-driven,
+              youth-guided, culturally competent, and collaborative across multiple agencies.
+            </p>
+            <mat-action-row>
+                
+                <button mat-button color="primary" (click)="nextStep()">Next</button>
+              </mat-action-row>
+          </mat-expansion-panel>
+            <mat-expansion-panel class="vl" [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+              
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Increase community participation
+                </mat-panel-title>
+                <mat-panel-description>
+                  <!-- Type the country name -->
+                  <!-- <mat-icon>map</mat-icon> -->
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p> 
+                Increase community participation, including youth, family members, and 
+                spiritual advisors in developing a system of care based on cultural values and practices.
+              </p>
+              <mat-action-row>
+                <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                <button mat-button color="primary" (click)="nextStep()">Next</button>
+              </mat-action-row>
+            </mat-expansion-panel>
+            
+            <mat-expansion-panel class="vl" [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Provide workforce training
+                </mat-panel-title>
+                <mat-panel-description>
+                  <!-- Type the country name -->
+                  <!-- <mat-icon>map</mat-icon> -->
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p> 
+                  Provide workforce training on historical trauma, systems of care,
+                  trauma-informed services, the recovery process, and cultural competency 
+                  working with AI/ANs.
+              </p>
+              <mat-action-row>
+                <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                <button mat-button color="primary" (click)="nextStep()">Next</button>
+              </mat-action-row>
+            </mat-expansion-panel>
+  
+            <mat-expansion-panel class="vl" [expanded]="step === 3" (opened)="setStep(3)" hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Improve collaborative relationships
+                </mat-panel-title>
+                <mat-panel-description>
+                    providers working with AI/AN children
+                  <!-- <mat-icon>date_range</mat-icon> -->
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p> 
+                  Improve collaborative relationships and agreements among child serving agencies 
+                  and providers working with AI/AN children and their families.
+              </p>
+  
+              <mat-action-row>
+                <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                <button mat-button color="primary" (click)="nextStep()">End</button>
+              </mat-action-row>
+            </mat-expansion-panel>
+  
+        </mat-accordion>
+      </mat-card>
+  
+      </mat-card-content>
+    </mat-card>
+  </div>
+  

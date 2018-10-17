@@ -10,7 +10,13 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { HistoryComponent } from './history/history.component';
 import { MedicalAppointmentComponent } from './medical-appointment/medical-appointment.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { InViewportModule } from 'ng-in-viewport';
+import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 import {
   MatButtonModule,
@@ -32,6 +38,11 @@ import { AccreditationComponent } from './aboutus/accreditation/accreditation.co
 import { FinancialsComponent } from './aboutus/financials/financials.component';
 import { CounselingServicesComponent } from './services-programs/counseling-services/counseling-services.component';
 import { DentalServicesComponent } from './services-programs/dental-services/dental-services.component';
+import { GetInvolvedComponent } from './get-involved/get-involved.component';
+import { EventsFundraisersComponent } from './get-involved/events-fundraisers/events-fundraisers.component';
+import { NewsComponent } from './get-involved/news/news.component';
+import {MatChipsModule} from '@angular/material/chips';
+import { VolunteerOpportunitiesComponent } from './get-involved/volunteer-opportunities/volunteer-opportunities.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +66,11 @@ import { DentalServicesComponent } from './services-programs/dental-services/den
     AccreditationComponent,
     FinancialsComponent,
     CounselingServicesComponent,
-    DentalServicesComponent
+    DentalServicesComponent,
+    GetInvolvedComponent,
+    EventsFundraisersComponent,
+    NewsComponent,
+    VolunteerOpportunitiesComponent
   ],
   imports: [
     BrowserModule,
@@ -67,7 +82,14 @@ import { DentalServicesComponent } from './services-programs/dental-services/den
     MatFormFieldModule,
     MatInputModule,
     MatRadioModule,
-    InViewportModule
+    MatCardModule,
+    MatDividerModule,
+    MatListModule,
+    MatIconModule,
+    MatExpansionModule,
+    MatGridListModule,
+    MatTooltipModule,
+    MatChipsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

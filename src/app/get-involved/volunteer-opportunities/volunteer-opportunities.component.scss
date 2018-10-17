@@ -1,0 +1,11 @@
+@import '../../../../node_modules/animate.css/animate.min.css'; 
+.al-c{
+      text-align: center;
+      font-size: 25px;
+      padding: 10% 10% 10% 10%;
+  }
+  .jackInTheBox {
+    animation-duration: 2s;
+    // animation-delay: 2s;
+    animation-iteration-count: infinite;
+  }

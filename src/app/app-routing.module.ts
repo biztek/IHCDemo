@@ -18,6 +18,11 @@ import { AccreditationComponent } from './aboutus/accreditation/accreditation.co
 import { FinancialsComponent } from './aboutus/financials/financials.component';
 import { CounselingServicesComponent } from './services-programs/counseling-services/counseling-services.component';
 import { DentalServicesComponent } from './services-programs/dental-services/dental-services.component';
+import { GetInvolvedComponent } from './get-involved/get-involved.component';
+import { EventsFundraisersComponent } from './get-involved/events-fundraisers/events-fundraisers.component';
+import { NewsComponent } from './get-involved/news/news.component';
+import { VolunteerOpportunitiesComponent } from './get-involved/volunteer-opportunities/volunteer-opportunities.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -38,6 +43,10 @@ const routes: Routes = [
   {path: 'financials', component: FinancialsComponent},
   {path: 'counseling-services', component: CounselingServicesComponent},
   {path: 'dental-services', component: DentalServicesComponent},
+  {path: 'Get-Involved', component: GetInvolvedComponent},
+  {path: 'events-fundraisers', component: EventsFundraisersComponent},
+  {path: 'news', component: NewsComponent},
+  {path: 'volunteer-opportunities', component: VolunteerOpportunitiesComponent},
 ];
 
 @NgModule({

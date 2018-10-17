@@ -8,7 +8,8 @@ import { templateJitUrl } from '@angular/compiler';
 })
 
 export class HomeComponent {
-
+    public divID = -1;
+    public mouseOvered = false;
     constructor(private renderer: Renderer2){};
 
     addAnimation(event, animationClass) {

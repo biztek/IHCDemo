@@ -30,6 +30,8 @@ import { FundersComponent } from './aboutus/funders/funders.component';
 import { DonorsComponent } from './aboutus/donors/donors.component';
 import { AccreditationComponent } from './aboutus/accreditation/accreditation.component';
 import { FinancialsComponent } from './aboutus/financials/financials.component';
+import { CounselingServicesComponent } from './services-programs/counseling-services/counseling-services.component';
+import { DentalServicesComponent } from './services-programs/dental-services/dental-services.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { FinancialsComponent } from './aboutus/financials/financials.component';
     FundersComponent,
     DonorsComponent,
     AccreditationComponent,
-    FinancialsComponent
+    FinancialsComponent,
+    CounselingServicesComponent,
+    DentalServicesComponent
   ],
   imports: [
     BrowserModule,

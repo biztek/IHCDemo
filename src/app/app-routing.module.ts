@@ -16,6 +16,8 @@ import { FundersComponent } from './aboutus/funders/funders.component';
 import { DonorsComponent } from './aboutus/donors/donors.component';
 import { AccreditationComponent } from './aboutus/accreditation/accreditation.component';
 import { FinancialsComponent } from './aboutus/financials/financials.component';
+import { CounselingServicesComponent } from './services-programs/counseling-services/counseling-services.component';
+import { DentalServicesComponent } from './services-programs/dental-services/dental-services.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -34,6 +36,8 @@ const routes: Routes = [
   {path: 'donors', component: DonorsComponent},
   {path: 'accreditation', component: AccreditationComponent},
   {path: 'financials', component: FinancialsComponent},
+  {path: 'counseling-services', component: CounselingServicesComponent},
+  {path: 'dental-services', component: DentalServicesComponent},
 ];
 
 @NgModule({

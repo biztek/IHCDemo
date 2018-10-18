@@ -18,14 +18,16 @@ import { AccreditationComponent } from './aboutus/accreditation/accreditation.co
 import { FinancialsComponent } from './aboutus/financials/financials.component';
 import { CounselingServicesComponent } from './services-programs/counseling-services/counseling-services.component';
 import { DentalServicesComponent } from './services-programs/dental-services/dental-services.component';
+import { AmericanIndianResourcesComponent } from './resources/american-indian-resources/american-indian-resources.component';
+import { IhcArchivesComponent } from './resources/ihc-archives/ihc-archives.component';
 import { GetInvolvedComponent } from './get-involved/get-involved.component';
 import { EventsFundraisersComponent } from './get-involved/events-fundraisers/events-fundraisers.component';
 import { NewsComponent } from './get-involved/news/news.component';
 import { VolunteerOpportunitiesComponent } from './get-involved/volunteer-opportunities/volunteer-opportunities.component';
-
+import { FAQComponent } from './resources/faq/faq.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  {path: '', redirectTo: '/home', pathMatch: 'full' },
   {path: 'home',component: HomeComponent },
   {path: 'aboutus',component: AboutusComponent },
   {path: 'history', component: HistoryComponent},
@@ -43,10 +45,13 @@ const routes: Routes = [
   {path: 'financials', component: FinancialsComponent},
   {path: 'counseling-services', component: CounselingServicesComponent},
   {path: 'dental-services', component: DentalServicesComponent},
+  {path: 'americanIndian', component: AmericanIndianResourcesComponent},
+  {path: 'ihcArchives', component: IhcArchivesComponent},
   {path: 'Get-Involved', component: GetInvolvedComponent},
   {path: 'events-fundraisers', component: EventsFundraisersComponent},
   {path: 'news', component: NewsComponent},
   {path: 'volunteer-opportunities', component: VolunteerOpportunitiesComponent},
+  {path: 'faq', component: FAQComponent}
 ];
 
 @NgModule({

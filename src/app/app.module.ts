@@ -38,11 +38,14 @@ import { AccreditationComponent } from './aboutus/accreditation/accreditation.co
 import { FinancialsComponent } from './aboutus/financials/financials.component';
 import { CounselingServicesComponent } from './services-programs/counseling-services/counseling-services.component';
 import { DentalServicesComponent } from './services-programs/dental-services/dental-services.component';
+import { AmericanIndianResourcesComponent } from './resources/american-indian-resources/american-indian-resources.component';
+import { IhcArchivesComponent } from './resources/ihc-archives/ihc-archives.component';
 import { GetInvolvedComponent } from './get-involved/get-involved.component';
 import { EventsFundraisersComponent } from './get-involved/events-fundraisers/events-fundraisers.component';
 import { NewsComponent } from './get-involved/news/news.component';
 import {MatChipsModule} from '@angular/material/chips';
 import { VolunteerOpportunitiesComponent } from './get-involved/volunteer-opportunities/volunteer-opportunities.component';
+import { FAQComponent } from './resources/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -67,10 +70,13 @@ import { VolunteerOpportunitiesComponent } from './get-involved/volunteer-opport
     FinancialsComponent,
     CounselingServicesComponent,
     DentalServicesComponent,
+    AmericanIndianResourcesComponent,
+    IhcArchivesComponent,
     GetInvolvedComponent,
     EventsFundraisersComponent,
     NewsComponent,
-    VolunteerOpportunitiesComponent
+    VolunteerOpportunitiesComponent,
+    FAQComponent
   ],
   imports: [
     BrowserModule,

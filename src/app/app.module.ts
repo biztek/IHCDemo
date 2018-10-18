@@ -45,6 +45,7 @@ import { EventsFundraisersComponent } from './get-involved/events-fundraisers/ev
 import { NewsComponent } from './get-involved/news/news.component';
 import {MatChipsModule} from '@angular/material/chips';
 import { VolunteerOpportunitiesComponent } from './get-involved/volunteer-opportunities/volunteer-opportunities.component';
+import { FAQComponent } from './resources/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { VolunteerOpportunitiesComponent } from './get-involved/volunteer-opport
     GetInvolvedComponent,
     EventsFundraisersComponent,
     NewsComponent,
-    VolunteerOpportunitiesComponent
+    VolunteerOpportunitiesComponent,
+    FAQComponent
   ],
   imports: [
     BrowserModule,

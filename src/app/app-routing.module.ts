@@ -24,10 +24,10 @@ import { GetInvolvedComponent } from './get-involved/get-involved.component';
 import { EventsFundraisersComponent } from './get-involved/events-fundraisers/events-fundraisers.component';
 import { NewsComponent } from './get-involved/news/news.component';
 import { VolunteerOpportunitiesComponent } from './get-involved/volunteer-opportunities/volunteer-opportunities.component';
-
+import { FAQComponent } from './resources/faq/faq.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  {path: '', redirectTo: '/home', pathMatch: 'full' },
   {path: 'home',component: HomeComponent },
   {path: 'aboutus',component: AboutusComponent },
   {path: 'history', component: HistoryComponent},
@@ -51,6 +51,7 @@ const routes: Routes = [
   {path: 'events-fundraisers', component: EventsFundraisersComponent},
   {path: 'news', component: NewsComponent},
   {path: 'volunteer-opportunities', component: VolunteerOpportunitiesComponent},
+  {path: 'faq', component: FAQComponent}
 ];
 
 @NgModule({

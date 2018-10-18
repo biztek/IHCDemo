@@ -32,6 +32,8 @@ import { AccreditationComponent } from './aboutus/accreditation/accreditation.co
 import { FinancialsComponent } from './aboutus/financials/financials.component';
 import { CounselingServicesComponent } from './services-programs/counseling-services/counseling-services.component';
 import { DentalServicesComponent } from './services-programs/dental-services/dental-services.component';
+import { AmericanIndianResourcesComponent } from './resources/american-indian-resources/american-indian-resources.component';
+import { IhcArchivesComponent } from './resources/ihc-archives/ihc-archives.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +57,9 @@ import { DentalServicesComponent } from './services-programs/dental-services/den
     AccreditationComponent,
     FinancialsComponent,
     CounselingServicesComponent,
-    DentalServicesComponent
+    DentalServicesComponent,
+    AmericanIndianResourcesComponent,
+    IhcArchivesComponent
   ],
   imports: [
     BrowserModule,

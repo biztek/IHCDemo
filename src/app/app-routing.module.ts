@@ -18,6 +18,8 @@ import { AccreditationComponent } from './aboutus/accreditation/accreditation.co
 import { FinancialsComponent } from './aboutus/financials/financials.component';
 import { CounselingServicesComponent } from './services-programs/counseling-services/counseling-services.component';
 import { DentalServicesComponent } from './services-programs/dental-services/dental-services.component';
+import { AmericanIndianResourcesComponent } from './resources/american-indian-resources/american-indian-resources.component';
+import { IhcArchivesComponent } from './resources/ihc-archives/ihc-archives.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -38,6 +40,8 @@ const routes: Routes = [
   {path: 'financials', component: FinancialsComponent},
   {path: 'counseling-services', component: CounselingServicesComponent},
   {path: 'dental-services', component: DentalServicesComponent},
+  {path: 'americanIndian', component: AmericanIndianResourcesComponent},
+  {path: 'ihcArchives', component: IhcArchivesComponent}
 ];
 
 @NgModule({

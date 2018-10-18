@@ -1,0 +1,36 @@
+@import '~../../../variables.scss';
+
+.app-american-indian-page{
+    font-family: $font;
+    .card-header{
+        background: $green;
+        color: $white;
+        cursor: pointer;
+    }
+    .card{
+        background-color: rgba(255, 255, 255, 0.5) !important;
+    }
+    .address-card {
+        border: 1px solid $green;
+        border-radius: 10px;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.8);
+    }
+    .section1{
+        height: auto;
+        position: relative;
+    }
+    .section1:after {
+        content:"";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: url("../../../assets/images/addressBG.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.3;
+    }
+}

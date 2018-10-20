@@ -1,5 +1,12 @@
 @import '../../variables.scss'; 
 
+.stick {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
 .app-header{
     border-bottom: 1px solid $gray;
     margin-bottom: 0;

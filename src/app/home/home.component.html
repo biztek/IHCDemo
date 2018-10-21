@@ -1,4 +1,24 @@
 <div class="col-12 no-padding app-home-page">
+    
+    <div class="section1 row py-5 px-auto">
+        <div class="welcome-card col-11 col-sm-7 mx-auto animated fast" inViewport (inViewportAction)="addAnimation($event, 'slideInLeft')">
+            <div class="title">Welcome to IHC</div>
+            <div class="content">
+                <p>The Indian Health Center of Santa Clara Valley is located in San Jose, California and is a 501(c)3, non-profit, Urban Indian Health Center funded by the Indian Health Service and a 330 Federally Qualified Health Center funded by the Bureau of Primary Health Care.</p>
+                <p>IHC provides high quality, culturally competent medical and wellness services to American Indians/Alaska Natives and people from all walks of life, regardless of race, ethnicity, religion, gender, sexual orientation, or disability. We serve infants to elders and take pride in serving our diverse patients and clients!</p>
+                <p>If you are low-income, have no health insurance, or can't use your health insurance because of cost, we have a variety of programs that can help you in paying for health services. We can also help you in enrolling in the state Medi-Cal and other health coverage programs.</p>
+                <p>Call us today to find out more information and set up an appointment: (408) 445-3400.</p>
+            </div>
+        </div>
+        <div class="col-sm-4 col-12 mx-auto sponsor-card">
+            <img class="img-fluid animated slow" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')" src="../assets/images/sponsor_1.png"/>
+            <img class="img-fluid animated slow" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')" src="../assets/images/sponsor_2.png"/>
+            <img class="img-fluid animated slow" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')" src="../assets/images/sponsor_3.png"/>
+            <img class="img-fluid animated fast" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')" src="../assets/images/sponsor_4.png"/>
+            <img class="img-fluid animated fast" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')" src="../assets/images/sponsor_5.png"/>
+        </div>
+    </div>
+
     <div class="row section-carousel py-5 px-auto">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -45,24 +65,6 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </div>
-    </div>
-    <div class="section1 row py-5 px-auto">
-        <div class="welcome-card col-11 col-sm-7 mx-auto animated fast" inViewport (inViewportAction)="addAnimation($event, 'slideInLeft')">
-            <div class="title">Welcome to IHC</div>
-            <div class="content">
-                <p>The Indian Health Center of Santa Clara Valley is located in San Jose, California and is a 501(c)3, non-profit, Urban Indian Health Center funded by the Indian Health Service and a 330 Federally Qualified Health Center funded by the Bureau of Primary Health Care.</p>
-                <p>IHC provides high quality, culturally competent medical and wellness services to American Indians/Alaska Natives and people from all walks of life, regardless of race, ethnicity, religion, gender, sexual orientation, or disability. We serve infants to elders and take pride in serving our diverse patients and clients!</p>
-                <p>If you are low-income, have no health insurance, or can't use your health insurance because of cost, we have a variety of programs that can help you in paying for health services. We can also help you in enrolling in the state Medi-Cal and other health coverage programs.</p>
-                <p>Call us today to find out more information and set up an appointment: (408) 445-3400.</p>
-            </div>
-        </div>
-        <div class="col-sm-4 col-12 mx-auto sponsor-card">
-            <img class="img-fluid animated slow" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')" src="../assets/images/sponsor_1.png"/>
-            <img class="img-fluid animated slow" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')" src="../assets/images/sponsor_2.png"/>
-            <img class="img-fluid animated slow" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')" src="../assets/images/sponsor_3.png"/>
-            <img class="img-fluid animated fast" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')" src="../assets/images/sponsor_4.png"/>
-            <img class="img-fluid animated fast" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')" src="../assets/images/sponsor_5.png"/>
         </div>
     </div>
 

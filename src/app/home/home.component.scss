@@ -131,6 +131,9 @@
             margin-right: auto;
             // padding: 2em;
         }
+        .carousel-indicators {
+            bottom: 0;
+        }
         .carousel-item{
             border: 5px solid $green;
             border-radius: 10px;

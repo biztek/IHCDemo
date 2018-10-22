@@ -122,6 +122,7 @@
                 display: block;
                 padding: 0 10px !important;
                 a {
+                    color: $green !important;
                     font-size: 12px !important;
                 }
             }
@@ -135,12 +136,15 @@
         height: 65px;
         .dropdown-menu {
             min-width: 300px;
+            a{
+                color: $green !important;
+            }
         }
         li {
             padding: 10px !important;
             a {
                 font-weight: bold;
-                color: $black !important;
+                color: $white !important;
                 font-size: 17px;
                 text-transform: uppercase;
             }

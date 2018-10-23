@@ -25,6 +25,8 @@ import { EventsFundraisersComponent } from './get-involved/events-fundraisers/ev
 import { NewsComponent } from './get-involved/news/news.component';
 import { VolunteerOpportunitiesComponent } from './get-involved/volunteer-opportunities/volunteer-opportunities.component';
 import { FAQComponent } from './resources/faq/faq.component';
+import { MedicalServicesComponent } from './services-programs/medical-services/medical-services.component';
+import { NutritionServicesComponent } from './services-programs/nutrition-services/nutrition-services.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -51,7 +53,9 @@ const routes: Routes = [
   {path: 'events-fundraisers', component: EventsFundraisersComponent},
   {path: 'news', component: NewsComponent},
   {path: 'volunteer-opportunities', component: VolunteerOpportunitiesComponent},
-  {path: 'faq', component: FAQComponent}
+  {path: 'faq', component: FAQComponent},
+  {path: 'medical-services', component: MedicalServicesComponent},
+  {path: 'nutrition-services', component: NutritionServicesComponent},
 ];
 
 @NgModule({

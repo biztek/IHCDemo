@@ -198,6 +198,19 @@
 //         }
 //     }
 // }
+.app-header:after {
+    content:"";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url("../../assets/images/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
 
 .app-header {
     position: fixed;
@@ -239,6 +252,15 @@
                 font-size: 17px;
                 text-transform: uppercase;
                 color: $black !important;
+            }
+        }
+        .dropdown-menu {
+            min-width: 300px;
+            li {
+                margin-top: 10px;
+                a {
+                    text-transform: none;
+                }
             }
         }
     }

@@ -1,17 +1,23 @@
 h3, h5, a{
     color: #2E6021 !important;
 }
-.mhbg{
-    background-image: url("../../../assets/images/mhbg2.jpg");
-    background-position: center;
+.dentalbg{
+    background-image: url("../../../assets/images/dentalbg.jpg");
+    
 }
 .gg .alert-success{
     min-height: 75px;
     color: #ffffff;
-    background-color: #1c8600;
+    background-color: #1c8600ba;
     border-color: #1c8600;
 }
 .bg-w{
     background-color: #ffffffe8;
-    padding: 2rem;
+    padding: 1rem;
+}
+.bg{
+    background-color: #ffffff7a;
+}
+.mhbg{
+    background-color: #1c8600;
 }

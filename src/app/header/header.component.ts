@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Router } from '@angular/router';
 import * as $ from 'jquery';
 
 @Component({
@@ -8,20 +9,26 @@ import * as $ from 'jquery';
 })
 
 export class HeaderComponent implements OnInit{
-    ngOnInit() {
-        $(window).scroll(this.sticktothetop);
-        this.sticktothetop();
+
+    constructor(private renderer: Renderer2, private router: Router) {
+        router.events.subscribe((val) => {
+            debugger;
+            // if(val instanceOf NavigationStart) {
+            //     console.log('here');
+            // }
+        });
     }
-    sticktothetop() {
-        var window_top = $(window).scrollTop();
-        var top = $('#stick-here').offset().top;
-        console.log('scrolling');
-        if (window_top > top) {
-            $('#stickThis').addClass('stick');
-            $('#stick-here').height($('#stickThis').outerHeight());
+    ngOnInit() {}
+
+    fnCloseList() {
+        $('#menuAlignButton').click();
+    }
+    
+    toggleMenuList(event) {
+        if($('#menuAlignButton').attr('aria-expanded') == "true") {
+            $('#bodyDisable').hide();
         } else {
-            $('#stickThis').removeClass('stick');
-            $('#stick-here').height(0);
+            $('#bodyDisable').show();
         }
     }
 }

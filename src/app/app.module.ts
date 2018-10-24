@@ -46,6 +46,8 @@ import { NewsComponent } from './get-involved/news/news.component';
 import {MatChipsModule} from '@angular/material/chips';
 import { VolunteerOpportunitiesComponent } from './get-involved/volunteer-opportunities/volunteer-opportunities.component';
 import { FAQComponent } from './resources/faq/faq.component';
+import { HeaderService } from './header.service';
+import { HttpClientModule }    from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -96,8 +98,11 @@ import { FAQComponent } from './resources/faq/faq.component';
     MatGridListModule,
     MatTooltipModule,
     MatChipsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    HeaderService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

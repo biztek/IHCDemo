@@ -218,6 +218,23 @@
     height: 100px;
     border-bottom: 1px solid $gray;
     background: $white;
+    .selectedList {
+        background: $white;
+        z-index: 9999;
+        position: absolute;
+        width: calc(100% - 30px);
+        li {
+            margin-top: 10px;
+            a{
+                color: $black;
+                font-size: 15px;
+            }
+            a:hover {
+                text-decoration: none;
+                color: $green;
+            }
+        }
+    }
     .title-block {
         display: inline-block;
         margin-left: 15px;

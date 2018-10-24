@@ -16,7 +16,14 @@
             <div class="col-12 col-sm-12 col-md-6 sb-100">
                 <div class="search-box relative">
                     <span class="fa fa-search search-icon"></span>
-                    <input type="text" class="form-control search-input" placeholder="Search IHC here" />
+                    <input type="text" [(ngModel)]="searchKey" (input)="fnSearchList()" class="form-control search-input" placeholder="Search IHC here" />
+                </div>
+                <div class="selectedList shadow px-3 py-2" *ngIf="selectedList.length" (click)="clickedInside($event)">
+                    <ul class="list-unstyled">
+                        <li *ngFor="let item of selectedList">
+                            <a href="#" class="d-block" (click)="searchKey = ''; selectedList = [];" [routerLink]="['/' + item.link]">{{item.name}}</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="col-md-6 top-list margin-t10 text-right">

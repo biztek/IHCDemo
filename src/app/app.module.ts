@@ -51,6 +51,9 @@ import { MedicalServicesComponent } from './services-programs/medical-services/m
 import { NutritionServicesComponent } from './services-programs/nutrition-services/nutrition-services.component';
 import { HeaderService } from './header.service';
 import { HttpClientModule }    from '@angular/common/http';
+import { NewPatientComponent } from './services-programs/new-patient/new-patient.component';
+import { AiPatientComponent } from './services-programs/ai-patient/ai-patient.component';
+
 
 @NgModule({
   declarations: [
@@ -83,7 +86,9 @@ import { HttpClientModule }    from '@angular/common/http';
     VolunteerOpportunitiesComponent,
     FAQComponent,
     MedicalServicesComponent,
-    NutritionServicesComponent
+    NutritionServicesComponent,
+    NewPatientComponent,
+    AiPatientComponent
   ],
   imports: [
     BrowserModule,

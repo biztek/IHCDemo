@@ -1,0 +1,180 @@
+{
+	"data": [{
+		"name": "Home",
+		"link": "home"
+	}, {
+		"name": "Services We Provide",
+		"link": "home"
+	}, {
+		"name": "Health Care News",
+		"link": "home"
+	}, {
+		"name": "IHC News",
+		"link": "home"
+	}, {
+		"name": "IHC Board application",
+		"link": "home"
+	}, {
+		"name": "Welcome to IHC",
+		"link": "home"
+	}, {
+		"name": "Locations",
+		"link": "locations"
+	}, {
+		"name": "Contact Locations",
+		"link": "locations"
+	}, {
+		"name": "Staff",
+		"link": "staff-contact"
+	}, {
+		"name": "Contact Staff",
+		"link": "staff-contact"
+	}, {
+		"name": "American Indian Resources",
+		"link": "americanIndian"
+	}, {
+		"name": "HIV/AIDS resources",
+		"link": "americanIndian"
+	}, {
+		"name": "Alcohol Substance abuse",
+		"link": "americanIndian"
+	}, {
+		"name": "Community organizations",
+		"link": "americanIndian"
+	}, {
+		"name": "Counseling services",
+		"link": "americanIndian"
+	}, {
+		"name": "Education Preschool - 12th Grade",
+		"link": "americanIndian"
+	}, {
+		"name": "Education College Level",
+		"link": "americanIndian"
+	}, {
+		"name": "Elders service",
+		"link": "americanIndian"
+	}, {
+		"name": "Foster care",
+		"link": "americanIndian"
+	}, {
+		"name": "Health Services",
+		"link": "americanIndian"
+	}, {
+		"name": "Dental Services",
+		"link": "americanIndian"
+	}, {
+		"name": "Job training and employment",
+		"link": "americanIndian"
+	}, {
+		"name": "Media/Art",
+		"link": "americanIndian"
+	}, {
+		"name": "Religious services",
+		"link": "americanIndian"
+	}, {
+		"name": "FAQ",
+		"link": "faq"
+	}, {
+		"name": "Frequently asked questions",
+		"link": "faq"
+	}, {
+		"name": "NCQA",
+		"link": "ihcArchives"
+	}, {
+		"name": "IHC Archives",
+		"link": "ihcArchives"
+	}, {
+		"name": "Patient Centered Care",
+		"link": "ihcArchives"
+	}, {
+		"name": "About us",
+		"link": "mission-statement"
+	}, {
+		"name": "Mission Statement",
+		"link": "mission-statement"
+	}, {
+		"name": "Methodology",
+		"link": "mission-statement"
+	}, {
+		"name": "IHC History",
+		"link": "history"
+	}, {
+		"name": "IHC",
+		"link": "home"
+	}, {
+		"name": "Board of Directors",
+		"link": "board-directors"
+	}, {
+		"name": "Board Members",
+		"link": "board-directors"
+	}, {
+		"name": "Collabarative Partners",
+		"link": "collaborative-partners"
+	}, {
+		"name": "Funders",
+		"link": "funders"
+	}, {
+		"name": "Donors",
+		"link": "donors"
+	}, {
+		"name": "Sponsors",
+		"link": "donors"
+	}, {
+		"name": "Title Sponsors",
+		"link": "donors"
+	}, {
+		"name": "T-Shirt Sponsors",
+		"link": "donors"
+	}, {
+		"name": "Venue Sponsors",
+		"link": "donors"
+	}, {
+		"name": "Reception Sponsors",
+		"link": "donors"
+	}, {
+		"name": "Table Sponsors",
+		"link": "donors"
+	}, {
+		"name": "Dinner Sponsors",
+		"link": "donors"
+	}, {
+		"name": "Accreditation",
+		"link": "accreditation"
+	}, {
+		"name": "AAAHC",
+		"link": "accreditation"
+	}, {
+		"name": "Financials",
+		"link": "financials"
+	}, {
+		"name": "Financial Audit Statements",
+		"link": "financials"
+	}, {
+		"name": "Appointment",
+		"link": "medicalAppointment"
+	}, {
+		"name": "Medical Appointment",
+		"link": "medicalAppointment"
+	}, {
+		"name": "",
+		"link": ""
+	}, {
+		"name": "",
+		"link": ""
+	}, {
+		"name": "",
+		"link": ""
+	}, {
+		"name": "",
+		"link": ""
+	}, {
+		"name": "",
+		"link": ""
+	}, {
+		"name": "",
+		"link": ""
+	}, {
+		"name": "",
+		"link": ""
+	}]
+}

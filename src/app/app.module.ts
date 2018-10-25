@@ -17,6 +17,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatTabsModule} from '@angular/material/tabs';
 
 import {
   MatButtonModule,
@@ -46,6 +47,8 @@ import { NewsComponent } from './get-involved/news/news.component';
 import {MatChipsModule} from '@angular/material/chips';
 import { VolunteerOpportunitiesComponent } from './get-involved/volunteer-opportunities/volunteer-opportunities.component';
 import { FAQComponent } from './resources/faq/faq.component';
+import { MedicalServicesComponent } from './services-programs/medical-services/medical-services.component';
+import { NutritionServicesComponent } from './services-programs/nutrition-services/nutrition-services.component';
 import { HeaderService } from './header.service';
 import { HttpClientModule }    from '@angular/common/http';
 
@@ -78,7 +81,9 @@ import { HttpClientModule }    from '@angular/common/http';
     EventsFundraisersComponent,
     NewsComponent,
     VolunteerOpportunitiesComponent,
-    FAQComponent
+    FAQComponent,
+    MedicalServicesComponent,
+    NutritionServicesComponent
   ],
   imports: [
     BrowserModule,
@@ -98,6 +103,7 @@ import { HttpClientModule }    from '@angular/common/http';
     MatGridListModule,
     MatTooltipModule,
     MatChipsModule,
+    MatTabsModule,
     HttpClientModule
   ],
   providers: [

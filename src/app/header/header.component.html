@@ -1,30 +1,46 @@
-<div class="col-12 no-padding">
-    <nav class="row app-header navbar navbar-expand-lg no-padding">
-        <div class="col-12 col-sm-12 col-md-8 col-lg-7 navbar-header main-header">
-            <a class="navbar-brand" href="#"><img src="/assets/images/logo.png" class="app-logo"/></a>
-            <h1 class="h1-heading relative">
-                Indian Health Center<br/>
-                <span class="app-mini-heading">of Santa Clara Valley</span><br/>
-                <span class="app-tag-heading">Where Everyone is Welcome!</span>
-            </h1>
+<div class="app-header col-12 row">
+    <div class="col-10 col-md-6 col-lg-5 col-xl-4 h-100 pl-0">
+        <a href="#" routerLink="/home">
+            <img src="/assets/images/logo.png" class="app-logo" />
+            <div class="relative title-block">
+                <div class="title">Indian Health Center</div>
+                <div class="tag">
+                    <span>Of Santa Clara Valley</span><br />
+                    <span>Where everyone is welcome!!</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-2 col-md-6 col-lg-7 col-xl-8 h-100">
+        <div class="row h-50" style="margin-left: 5px;">
+            <div class="col-12 col-sm-12 col-md-6 sb-100">
+                <div class="search-box relative">
+                    <span class="fa fa-search search-icon"></span>
+                    <input type="text" [(ngModel)]="searchKey" (input)="fnSearchList()" class="form-control search-input" placeholder="Search IHC here" />
+                </div>
+                <div class="selectedList shadow px-3 py-2" *ngIf="selectedList.length" (click)="clickedInside($event)">
+                    <ul class="list-unstyled">
+                        <li *ngFor="let item of selectedList">
+                            <a href="#" class="d-block" (click)="searchKey = ''; selectedList = [];" [routerLink]="['/' + item.link]">{{item.name}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 top-list margin-t10 text-right">
+                <a href="#">IHC Portal</a>
+                <a href="#">Donate</a>
+            </div>
         </div>
-        <div class="col-lg-5 col-md-4 col-sm-12 col-12 header-menu">
-            <ul class="nav navbar-nav pull-right">
-                <li><a class="pull-right app-link" href="#">IHC Patient Portal</a></li>
-                <li><a class="pull-right app-link" href="#">Donate now</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div id="stick-here"></div>
-    <nav class="row app-header background-green navbar navbar-expand-lg no-padding" id="stickThis">
-        <div class="col-6 col-md-9 col-lg-10">
-            <button class="navbar-toggler margin-t10" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon text-white fa fa-align-justify fa-2x"></span>
+        <div class="col-12 h-50 navbar navbar-expand-lg px-0">
+            <button (click)="toggleMenuList($event)" id="menuAlignButton" class="navbar-toggler margin-t10" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fa fa-align-justify"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav navbar-nav w-100 menu-list">
-                    <li class="margin-t10"><a href="#" [routerLink]="['/home']">Home</a></li>
-                    <li class="dropdown margin-t10">
+                <ul class="nav navbar-nav w-100 menu-list list-unstyled">
+                    <li class="close-icon text-right text-green"><span role="button" class="fa fa-times" (click)="fnCloseList()"></span></li>
+                    <li class="margin-t5"><a href="#" [routerLink]="['/home']">Home</a></li>
+                    <li class="dropdown margin-t5">
                         <a href="#" data-toggle="dropdown">About Us</a>
                         <ul class="dropdown-menu">
                             <li><a href="#" [routerLink]="['/mission-statement']">Mission Statement</a></li>
@@ -39,10 +55,11 @@
                             <li><a href="../../assets/pdf/IHC_Brochure.pdf" target="_blank">IHC Brochure</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown margin-t10">
+                    <li class="dropdown margin-t5">
                         <a href="#" data-toggle="dropdown">Services and Programs</a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" [routerLink]="['/community-wellness']">Community Wellness &amp; Outreach(CWO)</a></li>
+                            <li><a href="#" [routerLink]="['/community-wellness']">Community Wellness &amp;
+                                    Outreach(CWO)</a></li>
                             <li><a href="#" [routerLink]="['/counseling-services']">Counseling</a></li>
                             <li><a href="#" [routerLink]="['/dental-services']">Dental</a></li>
                             <li><a href="#" [routerLink]="['/medical-services']">Medical</a></li>
@@ -54,7 +71,7 @@
                             <li><a href="#">HIPAA</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown margin-t10">
+                    <li class="dropdown margin-t5">
                         <a href="#" data-toggle="dropdown">Get Involved</a>
                         <ul class="dropdown-menu">
                             <li><a href="#" target="_blank">Careers</a></li>
@@ -69,7 +86,7 @@
                             <li><a href="#">IHC's Wish List</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown margin-t10">
+                    <li class="dropdown margin-t5">
                         <a href="#" data-toggle="dropdown">Appointments</a>
                         <ul class="dropdown-menu">
                             <li><a href="#" [routerLink]="['medicalAppointment']">Medical Appointment</a></li>
@@ -77,10 +94,10 @@
                             <li><a href="#">Cita Medica</a></li>
                             <li><a href="#">Cita con Dentista</a></li>
                             <li><a href="#" target="_blank">IHC Patient
-                                Portal</a></li>
+                                    Portal</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown margin-t10">
+                    <li class="dropdown margin-t5">
                         <a href="#" data-toggle="dropdown">Resources</a>
                         <ul class="dropdown-menu">
                             <li><a href="#" target="_blank">Find Health Coverage</a></li>
@@ -89,21 +106,17 @@
                             <li><a href="#" routerLink="/ihcArchives">IHC Archives</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown margin-t10">
+                    <li class="dropdown margin-t5">
                         <a href="#" data-toggle="dropdown">Contact</a>
                         <ul class="dropdown-menu">
                             <li><a href="#" [routerLink]="['/locations']">Locations</a></li>
                             <li><a href="#" routerLink="/staff-contact">Staff Directory</a></li>
                         </ul>
                     </li>
+                    <li class="margin-t5 pull-right top-list-in-menu-list"><a href="#">IHC Portal</a></li>
+                    <li class="margin-t5 pull-right top-list-in-menu-list"><a href="#">Donate Now</a></li>
                 </ul>
             </div>
         </div>
-        <ul class="col-6 col-md-3 col-lg-2 pl-0 menu-list list-unstyled background-lite margin-t10">
-            <li class="pull-right w-100">
-                <span class="fa fa-search search-icon"></span>
-                <input type="text" class="form-control search-input" placeholder="Search" />
-            </li>
-        </ul>
-    </nav>
+    </div>
 </div>

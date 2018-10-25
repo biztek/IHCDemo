@@ -21,7 +21,7 @@ body {
 }
 
 .relative{
-    position: realtive;
+    position: relative;
 }
 
 a.app-link{
@@ -105,6 +105,25 @@ a.app-link:hover{
 .borderTop {
     border-top: 1px solid $gray;
 }
+
 #tabs md-tab-group  {
     background-color: #2E6021;
   }
+
+
+.body-disable:after {
+    content: '';
+    background: url('./assets/images/bg-white.png');
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+@include media-breakpoint-down(sm) {
+    .content{
+        font-size: 14px !important;
+    }
+}

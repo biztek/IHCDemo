@@ -49,6 +49,8 @@ import { VolunteerOpportunitiesComponent } from './get-involved/volunteer-opport
 import { FAQComponent } from './resources/faq/faq.component';
 import { MedicalServicesComponent } from './services-programs/medical-services/medical-services.component';
 import { NutritionServicesComponent } from './services-programs/nutrition-services/nutrition-services.component';
+import { HeaderService } from './header.service';
+import { HttpClientModule }    from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -101,9 +103,12 @@ import { NutritionServicesComponent } from './services-programs/nutrition-servic
     MatGridListModule,
     MatTooltipModule,
     MatChipsModule,
-    MatTabsModule
+    MatTabsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    HeaderService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

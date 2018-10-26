@@ -53,6 +53,8 @@ import { HeaderService } from './header.service';
 import { HttpClientModule }    from '@angular/common/http';
 import { NewPatientComponent } from './services-programs/new-patient/new-patient.component';
 import { AiPatientComponent } from './services-programs/ai-patient/ai-patient.component';
+import { PatientRightsComponent } from './services-programs/patient-rights/patient-rights.component';
+import { HipaaComponent } from './services-programs/hipaa/hipaa.component';
 
 
 @NgModule({
@@ -88,7 +90,9 @@ import { AiPatientComponent } from './services-programs/ai-patient/ai-patient.co
     MedicalServicesComponent,
     NutritionServicesComponent,
     NewPatientComponent,
-    AiPatientComponent
+    AiPatientComponent,
+    PatientRightsComponent,
+    HipaaComponent
   ],
   imports: [
     BrowserModule,

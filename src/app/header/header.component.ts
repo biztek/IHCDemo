@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2, HostListener } from '@angular/core';
+import { Component, OnInit, Renderer2, HostListener, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 import * as $ from 'jquery';
 import { HeaderService } from '../header.service';
@@ -11,10 +11,7 @@ import { HeaderService } from '../header.service';
 
 export class HeaderComponent implements OnInit{
 
-    constructor(private renderer: Renderer2, private router: Router, private headerService: HeaderService) {
-        router.events.subscribe((val) => {
-            console.log(val);
-        });
+    constructor(private renderer: Renderer2, private elementRef: ElementRef, private router: Router, private headerService: HeaderService) {
     }
     public searchList:any = []
     public searchKey:string = '';
@@ -25,6 +22,14 @@ export class HeaderComponent implements OnInit{
         .subscribe((data) => {
             this.searchList = data.data;
         })
+    }
+
+    ngAfterViewInit() {
+        $(this.elementRef.nativeElement).find('.menu-link').on('click', () => {
+            if($(this.elementRef.nativeElement).find('#menuAlignButton').attr('aria-expanded') == "true") {
+                this.fnCloseList();
+            }
+        });
     }
 
     fnSearchList() {
@@ -54,10 +59,11 @@ export class HeaderComponent implements OnInit{
     clickedInside($event: Event){
         $event.preventDefault();
         $event.stopPropagation(); 
-      }
+    }
 
     @HostListener('document:click', ['$event']) clickedOutside($event){
         this.selectedList = [];
+        this.searchKey = '';
     }
 }
 

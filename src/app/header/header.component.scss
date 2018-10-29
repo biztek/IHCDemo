@@ -1,228 +1,17 @@
 @import '../../variables.scss'; 
 
-// .header{
-//     position: fixed;
-//     z-index: 999;
-// }
-
-// .search-main-header {
-//     display: inline-block; 
-//     position: relative; 
-//     top: 10px; 
-//     margin-bottom: 0;
-// }
-
-// .search-mini-header{
-//     display: none;
-// }
-
-// .search-icon {
-//     position: absolute;
-//     font-size: 20px;
-//     top: 9px;
-//     left: 10px;
-//     color: $green;
-// }
-
-// .search-input {
-//     height: 40px;
-//     border: none !important;
-//     font-size: 18px;
-//     border-radius: 0 !important;
-//     outline: none !important;
-//     padding-left: 30px;
-//     box-shadow: none !important;
-//     background: $bgGray;
-//     border-bottom: 1px solid $black !important;
-// }
-
-// @media (max-width: 481px) {
-//     .app-header {
-//         height: 50px !important;
-//     }
-// }
-
-// .app-header{
-//     margin-bottom: 0;
-//     background: $white;
-//     a.app-link {
-//         color: $black !important;
-//     }
-//     // a.app-link:hover{
-//     //     border-bottom: 2px solid $white;
-//     // }
-//     .main-header {
-//         height: 55px !important;
-//         .navbar-brand {
-//             img {
-//                 height: 50px;
-//             }
-//             position: relative;
-//             top: -6px;
-//         }
-//     }
-//     .h1-heading {
-//         color: $black;
-//         display: inline-block;
-//         // font-weight: bold;
-//         position: relative;
-//         .app-mini-heading {
-//             font-size: 16px !important;
-//             position: absolute;
-//             bottom: 30px;
-//             font-weight: 100 !important;
-//         }
-//         .app-tag-heading {
-//             font-size:18px !important;
-//             font-weight: 200 !important;
-//             position: absolute;
-//             bottom: 0px;
-//         }
-//     }
-//     @media (max-width: 481px) {
-//         .search-main-header {
-//             display: none;
-//         }
-//         .search-mini-header {
-//             display: inline-block;
-//         }
-//         .main-header {
-//             .navbar-brand {
-//                 display: none;
-//             }
-//         }
-//         .h1-heading {
-//             font-size: 22px !important;
-//             margin-left: 0;
-//             width: 100%;
-//             margin-top: 5px;
-//             text-align: center;
-//             .app-mini-heading {
-//                 font-size: 14px !important;
-//                 bottom: 5px;
-//             }
-//             .app-tag-heading {
-//                 font-size:16px !important;
-//             }
-//         }
-//     }
-    
-//     .header-menu {
-//         li {
-//             margin-left: 30px;
-//         }
-//         li:hover{
-//             background: none !important;
-//         }
-//     }
-
-//     @include media-breakpoint-down(md) {
-//         .main-header {
-//             .h1-heading {
-//                 font-size: 2rem !important;
-//                 .app-mini-heading{
-//                     bottom: 25px;
-//                 }
-//             }
-//         }
-//         .header-menu {
-//             .navbar-nav {
-//                 float: left !important;
-//                 flex-direction: row;
-//                 li {
-//                     margin-left: 0;
-//                     margin-right: 10px;
-//                     margin-top: 0px;
-//                     margin-bottom: 10px;
-//                     a{
-//                         font-size: 14px !important;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-
-//     .collapse.show {
-//         .menu-list {
-//             .dropdown-menu {
-//                 min-width: 280px;
-//             }
-//             position: absolute;
-//             display: block;
-//             background: $white;
-//             height: auto;
-//             z-index: 9;
-//             top: 60px;
-//             min-width: 300px;
-//             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-//             li {
-//                 display: block;
-//                 padding: 0 10px !important;
-//                 a {
-//                     color: $black !important;
-//                     font-size: 12px !important;
-//                 }
-//             }
-//             .margin-t10 {
-//                 margin-top: 0 !important;
-//             }
-//         }
-//     }
-
-//     .menu-list{
-//         height: 45px;
-//         .dropdown-menu {
-//             min-width: 300px;
-//             a{
-//                 color: $black !important;
-//             }
-//         }
-//         li {
-//             padding: 10px !important;
-//             a {
-//                 font-weight: bold;
-//                 color: $black !important;
-//                 font-size: 17px;
-//                 text-transform: uppercase;
-//             }
-//         }
-//     }
-//     @include media-breakpoint-down(lg){
-//         .menu-list {
-//             li {
-//                 padding: 10px 5px !important;
-//                 a {
-//                     font-size: 15px;
-//                 }
-//             }
-//         }
-//     }
-// }
-.app-header:after {
-    content:"";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: url("../../assets/images/header.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.5;
-}
-
 .app-header {
     position: fixed;
     z-index: 999;
     height: 100px;
     border-bottom: 1px solid $gray;
-    background: $white;
+    background: $black;
     .selectedList {
         background: $white;
         z-index: 9999;
         position: absolute;
-        width: calc(100% - 30px);
+        width: calc(100%);
+        border-radius: 10px;
         li {
             margin-top: 10px;
             a{
@@ -243,18 +32,21 @@
         font-size: 24px;
         font-weight: bold;
         text-transform: uppercase;
-        color: $black !important;
+        color: $white !important;
         display: inline-block;
         margin-top: 6px;
     }
     .tag{
-        color: $black;
-        font-size: 16px;
+        color: $white;
+        font-size: 17px;
+        margin-top: 18px;
+        font-weight: bold;
+        position: absolute;
+        right: 0;
     }
     .app-logo {
         position: relative;
-        top: -25px;
-        height: 90px;
+        height: 45px;
     }
     .menu-list {
         .close-icon{
@@ -268,7 +60,7 @@
             a {
                 font-size: 17px;
                 text-transform: uppercase;
-                color: $black !important;
+                color: $white !important;
             }
         }
         .dropdown-menu {
@@ -276,34 +68,37 @@
             li {
                 margin-top: 10px;
                 a {
+                    color: $black !important;
                     text-transform: none;
                 }
             }
         }
     }
-    .top-list {
-        a {
-            color: $green;
-            margin-left: 20px;
-            font-size: 17px;
-            text-transform: uppercase;
-        }
+    .spcl-menu{
+        position: absolute;
+        right: 0;
     }
     .search-box {
+        width: 40%;
+        z-index: 999;
         .search-icon {
             position: absolute;
             font-size: 20px;
-            top: 9px;
             color: $green;
+            background: #fb5;
+            height: 39px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            padding: 10px;
         }
 
         .search-input {
             height: 40px;
             border: none !important;
             font-size: 16px;
-            border-radius: 0 !important;
+            border-radius: 10px;
             outline: none !important;
-            padding-left: 30px;
+            padding-left: 45px;
             box-shadow: none !important;
             border-bottom: 1px solid $black !important;
         }
@@ -311,6 +106,7 @@
     .navbar-toggler {
         position: absolute;
         right: 0;
+        color: $white;
         padding: 0;
     }
     .collapse.show {
@@ -334,6 +130,10 @@
                 a {
                     font-size: 14px;
                     text-transform: none;
+                    color: $black !important;
+                }
+                a:hover {
+                    color: $green !important;
                 }
             }
             .top-list-in-menu-list {
@@ -343,27 +143,55 @@
     }
 }
 
+@include media-breakpoint-down(xl) {
+    .app-header { 
+        .search-box {
+            left: 10%;
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .app-header { 
+        .search-box {
+            width: 30%;
+            left: 10%;
+        }
+    }
+}
+
 @include media-breakpoint-down(md) {
     .app-header { 
-        .app-logo {
+        .tag {
             display: none;
         }
         .title-block {
-            margin-left: 0;
+            margin-left: 10px;
         }
         .top-list {
             display: none;
         }
-        .sb-100{
-            max-width: 100% !important;
-            flex: 0 0 100% !important;
+        .search-box {
+            width: 30%;
+            left: 30%;
+        }
+        .spcl-menu{
+            display: none;
         }
     }
 }
 
 @include media-breakpoint-down(sm) {
-    .search-box{
-        display: none;
+    .app-header{
+        .title-block{
+            margin-top: 0 !important;
+        }
+        .search-box{
+            width: 70%;
+            left: 0;
+            position: absolute;
+            top: 44px;
+        }
     }
 }
 

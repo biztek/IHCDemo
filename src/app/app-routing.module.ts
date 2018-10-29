@@ -29,6 +29,8 @@ import { MedicalServicesComponent } from './services-programs/medical-services/m
 import { NutritionServicesComponent } from './services-programs/nutrition-services/nutrition-services.component';
 import { NewPatientComponent } from './services-programs/new-patient/new-patient.component';
 import { AiPatientComponent } from './services-programs/ai-patient/ai-patient.component';
+import { PatientRightsComponent } from './services-programs/patient-rights/patient-rights.component';
+import { HipaaComponent } from './services-programs/hipaa/hipaa.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -60,6 +62,8 @@ const routes: Routes = [
   {path: 'nutrition-services', component: NutritionServicesComponent},
   {path: 'new-patient', component: NewPatientComponent},
   {path: 'ai-patient', component: AiPatientComponent},
+  {path: 'patient-rights', component: PatientRightsComponent},
+  {path: 'hipaa', component: HipaaComponent},
 ];
 
 @NgModule({

@@ -55,6 +55,10 @@ import { NewPatientComponent } from './services-programs/new-patient/new-patient
 import { AiPatientComponent } from './services-programs/ai-patient/ai-patient.component';
 import { PatientRightsComponent } from './services-programs/patient-rights/patient-rights.component';
 import { HipaaComponent } from './services-programs/hipaa/hipaa.component';
+import { CustomerSatisfactionSurveyComponent } from './get-involved/customer-satisfaction-survey/customer-satisfaction-survey.component';
+import { CommentsSuggestionsComponent } from './get-involved/comments-suggestions/comments-suggestions.component';
+import { MailingListComponent } from './get-involved/mailing-list/mailing-list.component';
+import { IhcWishListComponent } from './get-involved/ihc-wish-list/ihc-wish-list.component';
 
 
 @NgModule({
@@ -92,7 +96,11 @@ import { HipaaComponent } from './services-programs/hipaa/hipaa.component';
     NewPatientComponent,
     AiPatientComponent,
     PatientRightsComponent,
-    HipaaComponent
+    HipaaComponent,
+    CustomerSatisfactionSurveyComponent,
+    CommentsSuggestionsComponent,
+    MailingListComponent,
+    IhcWishListComponent
   ],
   imports: [
     BrowserModule,

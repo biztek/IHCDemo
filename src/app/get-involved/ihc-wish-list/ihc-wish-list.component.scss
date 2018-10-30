@@ -1,0 +1,29 @@
+@import '../../../variables.scss';
+.app-staff {
+    font-family: $font;
+    .container{
+        background: rgba(255, 255, 255, 0.9);
+    }
+    .staff-card {
+        border: 1px solid $green;
+        border-radius: 10px;
+        height: 100%;
+    }
+    .section1{
+        height: auto;
+        position: relative;
+    }
+    .section1:after {
+        content:"";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: url("../../../assets/images/contactStaff.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.4;
+    }
+}

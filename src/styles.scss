@@ -7,6 +7,11 @@
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+@import '~@angular/material/theming';
+
+$custom-typography: mat-typography-config($font-family: 'myFont');
+@include mat-core($custom-typography);
+
 @font-face {
     font-family: myFont;
     src: url('./assets/Lato/Lato-Regular.ttf') format('truetype');
@@ -41,6 +46,10 @@ a.app-link:hover{
 
 .background-lite{
     background: $bgGray !important;
+}
+
+.background-white{
+    background: $white !important;
 }
 
 .background-green{

@@ -6,11 +6,22 @@
     background: $white;
   }
 }
-// .example-container {
-//   display: flex;
-//   flex-direction: column;
-// }
 
-// .example-container > * {
-//   width: 100%;
-// }
+.section1{
+  height: auto;
+  position: relative;
+}
+.section1:after {
+  content:"";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("../../assets/images/addressBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+}
+

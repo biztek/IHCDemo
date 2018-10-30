@@ -35,6 +35,9 @@ import { CustomerSatisfactionSurveyComponent } from './get-involved/customer-sat
 import { CommentsSuggestionsComponent } from './get-involved/comments-suggestions/comments-suggestions.component';
 import { MailingListComponent } from './get-involved/mailing-list/mailing-list.component';
 import { IhcWishListComponent } from './get-involved/ihc-wish-list/ihc-wish-list.component';
+import { DentalAppointmentComponent } from './dental-appointment/dental-appointment.component';
+import { CitaDentistaComponent } from './cita-dentista/cita-dentista.component';
+import { CitaMedicaComponent } from './cita-medica/cita-medica.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -71,7 +74,10 @@ const routes: Routes = [
   {path: 'customerSatisfactionSurvey', component: CustomerSatisfactionSurveyComponent},
   {path: 'commentsSuggestions', component: CommentsSuggestionsComponent},
   {path: 'mailingList', component: MailingListComponent},
-  {path: 'wishList', component: IhcWishListComponent}
+  {path: 'wishList', component: IhcWishListComponent},
+  {path: 'dental-appointment', component: DentalAppointmentComponent},
+  {path: 'cita-dentista', component: CitaDentistaComponent},
+  {path: 'cita-medica', component: CitaMedicaComponent},
 ];
 
 @NgModule({

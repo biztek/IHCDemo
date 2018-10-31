@@ -3,9 +3,7 @@
 .mbg {
   background-image: url("../../assets/images/donate1.jpg");
   background-repeat: no-repeat;
-  // background-position: center;
-  height: 560px;
-  width: auto;
+background-position: center;
 }
 
 .tl {
@@ -18,7 +16,6 @@
 .icont img {
   border-radius: 5px;
   margin: 5px;
-  margin-left: -25px;
   -webkit-box-shadow: 0 10px 6px -6px #777;
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 10px 6px -6px #777;
@@ -26,10 +23,6 @@
 }
 
 .mtext {
-  height: 75%;
-  width: 58%;
-  margin: 0;
-  margin-top: 15px;
   background-color: rgba(255, 255, 255, .4);
 }
 
@@ -52,8 +45,6 @@
 
 .box1 {
   background-color: rgba(255, 255, 255, .9);
-  border-radius: 25px;
-  margin-top: -10%;
 }
 .last-p{
   background-color: rgb(163, 202, 153);

@@ -59,6 +59,9 @@ import { CustomerSatisfactionSurveyComponent } from './get-involved/customer-sat
 import { CommentsSuggestionsComponent } from './get-involved/comments-suggestions/comments-suggestions.component';
 import { MailingListComponent } from './get-involved/mailing-list/mailing-list.component';
 import { IhcWishListComponent } from './get-involved/ihc-wish-list/ihc-wish-list.component';
+import { DentalAppointmentComponent } from './dental-appointment/dental-appointment.component';
+import { CitaDentistaComponent } from './cita-dentista/cita-dentista.component';
+import { CitaMedicaComponent } from './cita-medica/cita-medica.component';
 
 
 @NgModule({
@@ -100,7 +103,10 @@ import { IhcWishListComponent } from './get-involved/ihc-wish-list/ihc-wish-list
     CustomerSatisfactionSurveyComponent,
     CommentsSuggestionsComponent,
     MailingListComponent,
-    IhcWishListComponent
+    IhcWishListComponent,
+    DentalAppointmentComponent,
+    CitaDentistaComponent,
+    CitaMedicaComponent
   ],
   imports: [
     BrowserModule,

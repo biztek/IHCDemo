@@ -3,6 +3,11 @@
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
 
+
+a:hover {
+    text-decoration: none;
+}
+
 .app-home-page {
     .section1 {
         height: auto;

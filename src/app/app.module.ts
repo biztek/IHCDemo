@@ -62,6 +62,7 @@ import { IhcWishListComponent } from './get-involved/ihc-wish-list/ihc-wish-list
 import { DentalAppointmentComponent } from './dental-appointment/dental-appointment.component';
 import { CitaDentistaComponent } from './cita-dentista/cita-dentista.component';
 import { CitaMedicaComponent } from './cita-medica/cita-medica.component';
+import { HealthcareNewsComponent } from './home/healthcare-news/healthcare-news.component';
 
 
 @NgModule({
@@ -106,7 +107,8 @@ import { CitaMedicaComponent } from './cita-medica/cita-medica.component';
     IhcWishListComponent,
     DentalAppointmentComponent,
     CitaDentistaComponent,
-    CitaMedicaComponent
+    CitaMedicaComponent,
+    HealthcareNewsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,126 +1,148 @@
 <div class="app-header col-12 row">
-    <div class="col-12 h-50 navbar navbar-expand-md px-0">
-        <ul class="nav navbar-nav list-unstyled w-100">
-            <li class="title-li">
-                <a href="#" routerLink="/home">
-                    <img src="/assets/images/logo.png" class="app-logo" />
-                    <div class="relative title-block margin-t10 relative">
-                        <div class="title">Indian Health Center</div>
+    <div class="px-2 bg-white">
+        <img src="/assets/images/logo.png" class="app-logo mx-1 pt-2" />
+    </div>
+    <div class="col m-0">
+        <div class="col-12 h-50 navbar navbar-expand-md px-0">
+            <ul class="nav navbar-nav list-unstyled w-100">
+                <li class="title-li">
+                    <a href="#" routerLink="/home">
+
+                        <div class="relative title-block margin-t10 relative">
+                            <div class="title">Indian Health Center</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="search-box margin-t10 relative">
+                    <span class="fa fa-search search-icon"></span>
+                    <input type="text" [(ngModel)]="searchKey" (input)="fnSearchList()" class="form-control search-input"
+                        placeholder="Search IHC here" />
+                    <div class="selectedList shadow px-3 py-2" (click)="clickedInside($event)" *ngIf="searchKey.length >= 2">
+                        <ul class="list-unstyled" *ngIf="selectedList.length">
+                            <li *ngFor="let item of selectedList">
+                                <a href="#" class="d-block" (click)="searchKey = ''; selectedList = [];" [routerLink]="['/' + item.link]">{{item.name}}</a>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled" *ngIf="selectedList.length == 0">
+                            <li>No result(s) found for your search value</li>
+                            <li>
+                                <a href="#" class="d-block" (click)="searchKey = ''; selectedList = [];" [routerLink]="['/faq']"
+                                    class="text-green">Please visit our FAQ Page to know more</a>
+                            </li>
+                        </ul>
                     </div>
-                </a>
-            </li>
-            <li class="search-box margin-t10 relative">
-                <span class="fa fa-search search-icon"></span>
-                <input type="text" [(ngModel)]="searchKey" (input)="fnSearchList()" class="form-control search-input"
-                    placeholder="Search IHC here" />
-                <div class="selectedList shadow px-3 py-2" (click)="clickedInside($event)" *ngIf="searchKey.length >= 2">
-                    <ul class="list-unstyled" *ngIf="selectedList.length">
-                        <li *ngFor="let item of selectedList">
-                            <a href="#" class="d-block" (click)="searchKey = ''; selectedList = [];" [routerLink]="['/' + item.link]">{{item.name}}</a>
+                </li>
+                <li class="tag">Where everyone is welcome!!</li>
+            </ul>
+        </div>
+        <div class="col-12 h-50 px-0">
+            <div class="col-12 h-100 navbar navbar-expand-lg px-0">
+                <button (click)="toggleMenuList($event)" id="menuAlignButton" class="navbar-toggler margin-t10" type="button"
+                    data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa fa-align-justify"></span>
+                </button>
+                <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu-list list-unstyled pl-3">
+                        <li class="close-icon text-right text-green"><span role="button" class="fa fa-times" (click)="fnCloseList()"></span></li>
+                        <li class="margin-t5 ml-0"><a class="menu-link" href="#" [routerLink]="['/home']">Home</a></li>
+                        <li class="dropdown margin-t5">
+                            <a href="#" data-toggle="dropdown">About Us</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="menu-link" href="#" [routerLink]="['/mission-statement']">Mission
+                                        Statement</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/history']">IHC History</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/board-directors']">Board of
+                                        Directors</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/staff-directory']">Staff Directory</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/collaborative-partners']">Collaborative
+                                        Partners</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/funders']">Funders</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/donors']">Donors</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/accreditation']">Accreditation</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/financials']">Financials</a></li>
+                                <li><a class="menu-link" href="../../assets/pdf/IHC_Brochure.pdf" target="_blank">IHC
+                                        Brochure</a></li>
+                            </ul>
                         </li>
+                        <li class="dropdown margin-t5">
+                            <a href="#" data-toggle="dropdown">Services and Programs</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="menu-link" href="#" [routerLink]="['/community-wellness']">Community
+                                        Wellness &amp;
+                                        Outreach(CWO)</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/counseling-services']">Counseling</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/dental-services']">Dental</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/medical-services']">Medical</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/nutrition-services']">WIC/Nutrition</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/new-patient']">New Patient
+                                        Information</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/ai-patient']">American Indian
+                                        Patient Relations</a></li>
+                                <li><a class="menu-link" href="#">Patient Success Stories</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/patient-rights']">Patient Rights
+                                        &amp; Responsibilities</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/hipaa']">HIPAA</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown margin-t5">
+                            <a href="#" data-toggle="dropdown">Get Involved</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="menu-link" href="https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b62b602f-b187-4f75-856e-2ad3fd2d1341&ccId=19000101_000001&type=MP&lang=en_US"
+                                        target="_blank">Careers</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/Get-Involved']">Donate</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/events-fundraisers']">Events &amp;
+                                        Fundraisers</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/volunteer-opportunities']">Volunteer
+                                        Opportunities</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/news']">Newsletters</a></li>
+                                <li><a class="menu-link" href="#">Calendar</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/customerSatisfactionSurvey']">Customer
+                                        Satisfaction Survey</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/commentsSuggestions']">Comments/Suggestions</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/mailingList']">Join our Mailing List</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['/wishList']">IHC's Wish List</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown margin-t5">
+                            <a href="#" data-toggle="dropdown">Appointments</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="menu-link" href="#" [routerLink]="['medicalAppointment']">Medical
+                                        Appointment</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['dental-appointment']">Dental
+                                        Appointment</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['cita-medica']">Cita Medica</a></li>
+                                <li><a class="menu-link" href="#" [routerLink]="['cita-dentista']">Cita con Dentista</a></li>
+                                <li><a class="menu-link" href="https://health.eclinicalworks.com/ihcscv" target="_blank">IHC
+                                        Patient
+                                        Portal</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown margin-t5">
+                            <a href="#" data-toggle="dropdown">Resources</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="menu-link" href="http://www.indianhealthcenter.org/resources/medical-enrollment.html" target="_blank">Find Health Coverage</a></li>
+                                <li><a class="menu-link" href="#" routerLink="/americanIndian">American Indian
+                                        Resources</a></li>
+                                <li><a class="menu-link" href="#" routerLink="/faq">Frequently Asked Questions</a></li>
+                                <li><a class="menu-link" href="#" routerLink="/ihcArchives">IHC Archives</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown margin-t5">
+                            <a href="#" data-toggle="dropdown">Contact</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="menu-link" href="#" [routerLink]="['/locations']">Locations</a></li>
+                                <li><a class="menu-link" href="#" routerLink="/staff-contact">Staff Directory</a></li>
+                            </ul>
+                        </li>
+                        <li class="margin-t5 top-list-in-menu-list"><a class="menu-link" href="#">IHC Portal</a></li>
+                        <li class="margin-t5 top-list-in-menu-list"><a class="menu-link" href="#">Donate Now</a></li>
                     </ul>
-                    <ul class="list-unstyled" *ngIf="selectedList.length == 0">
-                        <li>No result(s) found for your search value</li>
-                        <li>
-                            <a href="#" class="d-block" (click)="searchKey = ''; selectedList = [];" [routerLink]="['/faq']" class="text-green">Please visit our FAQ Page to know more</a>
-                        </li>
+                    <ul class="nav navbar-nav list-unstyled spcl-menu menu-list">
+                        <li class="margin-t5 pull-right"><a class="menu-link" href="#">IHC Portal</a></li>
+                        <li class="margin-t5 pull-right"><a class="menu-link" href="#">Donate Now</a></li>
                     </ul>
                 </div>
-            </li>
-            <li class="tag">Where everyone is welcome!!</li>
-        </ul>
-    </div>
-    <div class="col-12 h-50 px-0">
-        <div class="col-12 h-100 navbar navbar-expand-lg px-0">
-            <button (click)="toggleMenuList($event)" id="menuAlignButton" class="navbar-toggler margin-t10" type="button"
-                data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon fa fa-align-justify"></span>
-            </button>
-            <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
-                <ul class="nav navbar-nav menu-list list-unstyled">
-                    <li class="close-icon text-right text-green"><span role="button" class="fa fa-times" (click)="fnCloseList()"></span></li>
-                    <li class="margin-t5 ml-0"><a class="menu-link" href="#" [routerLink]="['/home']">Home</a></li>
-                    <li class="dropdown margin-t5">
-                        <a href="#" data-toggle="dropdown">About Us</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="menu-link" href="#" [routerLink]="['/mission-statement']">Mission Statement</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/history']">IHC History</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/board-directors']">Board of Directors</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/staff-directory']">Staff Directory</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/collaborative-partners']">Collaborative Partners</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/funders']">Funders</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/donors']">Donors</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/accreditation']">Accreditation</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/financials']">Financials</a></li>
-                            <li><a class="menu-link" href="../../assets/pdf/IHC_Brochure.pdf" target="_blank">IHC Brochure</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown margin-t5">
-                        <a href="#" data-toggle="dropdown">Services and Programs</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="menu-link" href="#" [routerLink]="['/community-wellness']">Community Wellness &amp;
-                                    Outreach(CWO)</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/counseling-services']">Counseling</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/dental-services']">Dental</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/medical-services']">Medical</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/nutrition-services']">WIC/Nutrition</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/new-patient']">New Patient Information</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/ai-patient']">American Indian Patient Relations</a></li>
-                            <li><a class="menu-link" href="#">Patient Success Stories</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/patient-rights']">Patient Rights &amp; Responsibilities</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/hipaa']">HIPAA</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown margin-t5">
-                        <a href="#" data-toggle="dropdown">Get Involved</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="menu-link" href="https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b62b602f-b187-4f75-856e-2ad3fd2d1341&ccId=19000101_000001&type=MP&lang=en_US" target="_blank">Careers</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/Get-Involved']">Donate</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/events-fundraisers']">Events &amp; Fundraisers</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/volunteer-opportunities']">Volunteer Opportunities</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/news']">Newsletters</a></li>
-                            <li><a class="menu-link" href="#">Calendar</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/customerSatisfactionSurvey']">Customer Satisfaction Survey</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/commentsSuggestions']">Comments/Suggestions</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/mailingList']">Join our Mailing List</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['/wishList']">IHC's Wish List</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown margin-t5">
-                        <a href="#" data-toggle="dropdown">Appointments</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="menu-link" href="#" [routerLink]="['medicalAppointment']">Medical Appointment</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['dental-appointment']">Dental Appointment</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['cita-medica']">Cita Medica</a></li>
-                            <li><a class="menu-link" href="#" [routerLink]="['cita-dentista']">Cita con Dentista</a></li>
-                            <li><a class="menu-link" href="https://health.eclinicalworks.com/ihcscv" target="_blank">IHC Patient
-                                    Portal</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown margin-t5">
-                        <a href="#" data-toggle="dropdown">Resources</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="menu-link" href="#" target="_blank">Find Health Coverage</a></li>
-                            <li><a class="menu-link" href="#" routerLink="/americanIndian">American Indian Resources</a></li>
-                            <li><a class="menu-link" href="#" routerLink="/faq">Frequently Asked Questions</a></li>
-                            <li><a class="menu-link" href="#" routerLink="/ihcArchives">IHC Archives</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown margin-t5">
-                        <a href="#" data-toggle="dropdown">Contact</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="menu-link" href="#" [routerLink]="['/locations']">Locations</a></li>
-                            <li><a class="menu-link" href="#" routerLink="/staff-contact">Staff Directory</a></li>
-                        </ul>
-                    </li>
-                    <li class="margin-t5 top-list-in-menu-list"><a class="menu-link" href="#">IHC Portal</a></li>
-                    <li class="margin-t5 top-list-in-menu-list"><a class="menu-link" href="#">Donate Now</a></li>
-                </ul>
-                <ul class="nav navbar-nav list-unstyled spcl-menu menu-list">
-                    <li class="margin-t5 pull-right"><a class="menu-link" href="#">IHC Portal</a></li>
-                    <li class="margin-t5 pull-right"><a class="menu-link" href="#">Donate Now</a></li>
-                </ul>
             </div>
         </div>
     </div>

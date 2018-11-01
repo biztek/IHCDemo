@@ -1,31 +1,50 @@
 <div class="col-12 no-padding app-home-page">
-    
+
     <div class="section1 row py-5 px-auto">
         <div class="welcome-card col-11 col-sm-7 mx-auto animated fast" inViewport (inViewportAction)="addAnimation($event, 'slideInLeft')">
             <div class="title">Welcome to IHC</div>
             <div class="content">
-                <p>The Indian Health Center of Santa Clara Valley is located in San Jose, California and is a 501(c)3, non-profit, Urban Indian Health Center funded by the Indian Health Service and a 330 Federally Qualified Health Center funded by the Bureau of Primary Health Care.</p>
-                <p>IHC provides high quality, culturally competent medical and wellness services to American Indians/Alaska Natives and people from all walks of life, regardless of race, ethnicity, religion, gender, sexual orientation, or disability. We serve infants to elders and take pride in serving our diverse patients and clients!</p>
-                <p>If you are low-income, have no health insurance, or can't use your health insurance because of cost, we have a variety of programs that can help you in paying for health services. We can also help you in enrolling in the state Medi-Cal and other health coverage programs.</p>
+                <p>The Indian Health Center of Santa Clara Valley is located in San Jose, California and is a 501(c)3,
+                    non-profit, Urban Indian Health Center funded by the Indian Health Service and a 330 Federally
+                    Qualified Health Center funded by the Bureau of Primary Health Care.</p>
+                <p>IHC provides high quality, culturally competent medical and wellness services to American
+                    Indians/Alaska Natives and people from all walks of life, regardless of race, ethnicity, religion,
+                    gender, sexual orientation, or disability. We serve infants to elders and take pride in serving our
+                    diverse patients and clients!</p>
+                <p>If you are low-income, have no health insurance, or can't use your health insurance because of cost,
+                    we have a variety of programs that can help you in paying for health services. We can also help you
+                    in enrolling in the state Medi-Cal and other health coverage programs.</p>
                 <p>Call us today to find out more information and set up an appointment: (408) 445-3400.</p>
+                <div>
+                        <a class="btn btn-success btn-sm"  [routerLink]="['/medicalAppointment']">Medical Appointment</a>
+                        <a class="btn btn-success btn-sm mx-2" [routerLink]="['/dental-appointment']">Dental Appointment</a>
+                        <a class="btn btn-success btn-sm"  [routerLink]="['/cita-medica']">Cita Medica</a>
+                        <a class="btn btn-success btn-sm mx-2"  [routerLink]="['/cita-dentista']">Cita con Dentista</a>
+                        <a class="btn btn-success btn-sm float-right"  [routerLink]="['/history']">Read More...</a>
+                </div>
             </div>
         </div>
         <div class="col-sm-4 col-12 mx-auto sponsor-card">
-            <img class="img-fluid animated slow" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')" src="../assets/images/sponsor_1.png"/>
-            <img class="img-fluid animated slow" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')" src="../assets/images/sponsor_2.png"/>
-            <img class="img-fluid animated slow" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')" src="../assets/images/sponsor_3.png"/>
-            <img class="img-fluid animated fast" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')" src="../assets/images/sponsor_4.png"/>
-            <img class="img-fluid animated fast" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')" src="../assets/images/sponsor_5.png"/>
+            <img class="img-fluid animated slow" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')"
+                src="../assets/images/sponsor_1.png" />
+            <img class="img-fluid animated slow" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')"
+                src="../assets/images/sponsor_2.png" />
+            <img class="img-fluid animated slow" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')"
+                src="../assets/images/sponsor_3.png" />
+            <img class="img-fluid animated fast" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')"
+                src="../assets/images/sponsor_4.png" />
+            <img class="img-fluid animated fast" inViewport (inViewportAction)="addAnimation($event, 'slideInDown')"
+                src="../assets/images/sponsor_5.png" />
         </div>
     </div>
 
     <div class="row section-carousel py-5 px-auto">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                <li data-target="#carouselExampleIndicators" data-slide-to="3">
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -67,50 +86,65 @@
             </a>
         </div>
     </div>
-
+    <div class="w-100 mx-5 text-center">
+        <h4 class="m-3"><strong><u><a class="text-green" href="https://drive.google.com/drive/folders/1lPfQBnkfLJm8qmzIpaVH3j4z9UZtHwRe?usp=sharing"
+                    target="_blank">2018 National Association of Community Health Centers Policy and Issues Forum </a></u></strong></h4>
+    </div>
     <div class="section2 py-5 px-auto row text-center background-lite">
         <h1 class="app-h1 col-12 mb-2">Services We Provide</h1>
         <div class="row m-0 w-100">
             <div class="col-6 col-sm-4 mt-4">
-                <div class="service-card py-5 px-auto" (mouseover)="mouseOvered = true; divID = 1;" (mouseout)="mouseOvered = false; divID = -1;">
-                    <div class="title">Medical</div>
-                    <img class="image img-fluid animated" [class.rotateIn]="mouseOvered && divID == 1" src="../assets/images/services_1.jpg" />
-                </div>
+                <a href="#" [routerLink]="['/medical-services']">
+                    <div class="service-card py-5 px-auto" (mouseover)="mouseOvered = true; divID = 1;" (mouseout)="mouseOvered = false; divID = -1;">
+                        <div class="title">Medical</div>
+                        <img class="image img-fluid animated" [class.rotateIn]="mouseOvered && divID == 1" src="../assets/images/services_1.jpg" />
+                    </div>
+                </a>
             </div>
 
             <div class="col-6 col-sm-4 mt-4">
-                <div class="service-card py-5 px-auto" (mouseover)="mouseOvered = true; divID = 2;" (mouseout)="mouseOvered = false; divID = -1;">
-                    <div class="title">Dental</div>
-                    <img class="image img-fluid animated" [class.rotateIn]="mouseOvered && divID == 2" src="../assets/images/services_2.jpg" />
-                </div>
+                <a href="#" [routerLink]="['/dental-services']">
+                    <div class="service-card py-5 px-auto" (mouseover)="mouseOvered = true; divID = 2;" (mouseout)="mouseOvered = false; divID = -1;">
+                        <div class="title">Dental</div>
+                        <img class="image img-fluid animated" [class.rotateIn]="mouseOvered && divID == 2" src="../assets/images/services_2.jpg" />
+                    </div>
+                </a>
             </div>
 
             <div class="col-6 col-sm-4 mt-4">
-                <div class="service-card py-5 px-auto" (mouseover)="mouseOvered = true; divID = 3;" (mouseout)="mouseOvered = false; divID = -1;">
-                    <div class="title">Counseling</div>
-                    <img class="image img-fluid animated" [class.rotateIn]="mouseOvered && divID == 3" src="../assets/images/services_3.jpg" />
-                </div>
+                <a href="#" [routerLink]="['/counseling-services']">
+                    <div class="service-card py-5 px-auto" (mouseover)="mouseOvered = true; divID = 3;" (mouseout)="mouseOvered = false; divID = -1;">
+                        <div class="title">Counseling</div>
+                        <img class="image img-fluid animated" [class.rotateIn]="mouseOvered && divID == 3" src="../assets/images/services_3.jpg" />
+                    </div>
+                </a>
             </div>
 
             <div class="col-6 col-sm-4 mt-4">
-                <div class="service-card py-5 px-auto" (mouseover)="mouseOvered = true; divID = 4;" (mouseout)="mouseOvered = false; divID = -1;">
-                    <div class="title">WIC/Nutrition</div>
-                    <img class="image img-fluid animated" [class.rotateIn]="mouseOvered && divID == 4" src="../assets/images/services_4.jpg" />
-                </div>
+                <a href="#" [routerLink]="['/nutrition-services']">
+                    <div class="service-card py-5 px-auto" (mouseover)="mouseOvered = true; divID = 4;" (mouseout)="mouseOvered = false; divID = -1;">
+                        <div class="title">WIC/Nutrition</div>
+                        <img class="image img-fluid animated" [class.rotateIn]="mouseOvered && divID == 4" src="../assets/images/services_4.jpg" />
+                    </div>
+                </a>
             </div>
 
             <div class="col-6 col-sm-4 mt-4">
-                <div class="service-card py-5 px-auto" (mouseover)="mouseOvered = true; divID = 5;" (mouseout)="mouseOvered = false; divID = -1;">
-                    <div class="title">Community Wellness & Organization</div>
-                    <img class="image img-fluid animated" [class.rotateIn]="mouseOvered && divID == 5" src="../assets/images/services_5.jpg" />
-                </div>
+                <a href="#" [routerLink]="['/community-wellness']">
+                    <div class="service-card py-5 px-auto" (mouseover)="mouseOvered = true; divID = 5;" (mouseout)="mouseOvered = false; divID = -1;">
+                        <div class="title">Community Wellness & Organization</div>
+                        <img class="image img-fluid animated" [class.rotateIn]="mouseOvered && divID == 5" src="../assets/images/services_5.jpg" />
+                    </div>
+                </a>
             </div>
 
             <div class="col-6 col-sm-4 mt-4">
-                <div class="service-card py-5 px-auto" (mouseover)="mouseOvered = true; divID = 6;" (mouseout)="mouseOvered = false; divID = -1;">
-                    <div class="title">Find Health Coverage</div>
-                    <img class="image img-fluid animated" [class.rotateIn]="mouseOvered && divID == 6" src="../assets/images/services_6.jpg" />
-                </div>
+                <a href="http://www.indianhealthcenter.org/resources/medical-enrollment.html">
+                    <div class="service-card py-5 px-auto" (mouseover)="mouseOvered = true; divID = 6;" (mouseout)="mouseOvered = false; divID = -1;">
+                        <div class="title">Find Health Coverage</div>
+                        <img class="image img-fluid animated" [class.rotateIn]="mouseOvered && divID == 6" src="../assets/images/services_6.jpg" />
+                    </div>
+                </a>
             </div>
 
         </div>
@@ -118,11 +152,19 @@
 
     <div class="section3 row text-center py-5 px-auto">
         <h1 class="app-h1 col-12">Healthcare News</h1>
-        <a href="#" class="col-12"><span class="title-link">Culture is Prevention for our Future Generations</span></a>
+        <a href="#" class="col-12" [routerLink]="['/healthcare-news']"><span class="title-link">Culture is Prevention for our Future Generations</span></a>
         <div class="content container">
-            <p>The Indian Health Center's Counseling Department is working to improve mental health outcomes for American Indian/Alaskan Native youth in Santa Clara County by providing them cultural and traditional education services. The Surgeon General’s 2001 report on Mental Health: Culture, Race and Ethnicity stressed the essential importance of culture in designing behavioral programs and the value of community-based programs as an alternative to the psychiatric model. Youth donation with help promote mental wellness for these youth.</p>
+            <p>The Indian Health Center's Counseling Department is working to improve mental health outcomes for
+                American Indian/Alaskan Native youth in Santa Clara County by providing them cultural and traditional
+                education services. The Surgeon General’s 2001 report on Mental Health: Culture, Race and Ethnicity
+                stressed the essential importance of culture in designing behavioral programs and the value of
+                community-based programs as an alternative to the psychiatric model. Youth donation with help promote
+                mental wellness for these youth.</p>
             <p class="margin-t20">San Jose Native Youth Empowerment Program</p>
-            <p class="margin-t20">The SJNYEP is comprised of Native youth ages 10-17yrs. This program incorporates Native American values in case management, peer support, cultural education, community connection and leadership opportunities to build effective social skills.. </p>
+            <p class="margin-t20">The SJNYEP is comprised of Native youth ages 10-17yrs. This program incorporates
+                Native American values in case management, peer support, cultural education, community connection and
+                leadership opportunities to build effective social skills.. </p>
+                <a class="btn btn-success btn-sm float-right"  [routerLink]="['/healthcare-news']">Read More...</a>
         </div>
     </div>
 
@@ -142,11 +184,12 @@
                     </div>
                     <div class="col-12 margin-t20 service-card">
                         <div class="title">IHC By Laws</div>
-                        <a href="#" class="title-link">Click here to get the Flyer</a>
+                        <a href="../../assets/pdf/by_laws.pdf" class="title-link" target="_blank">Click here to get the Flyer</a>
                     </div>
                     <div class="col-12 margin-t20 service-card">
                         <div class="title">IHC Board Application</div>
-                        <a href="#" class="title-link">Click here to get the official Candidate Application for Membership to the Board of Directors</a>
+                        <a href="../../assets/pdf/ihc_board_application.pdf" class="title-link" target="_blank">Click here to get the official Candidate Application for
+                            Membership to the Board of Directors</a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-8">
@@ -155,22 +198,62 @@
                         <a href="#" class="title-link">Indian Health Center of Santa Clara has new Direct Phone numbers</a>
                         <div class="content margin-t30 text-left">
                             <table class="table table-bordered">
-                                <tr><td>Medical Meridian/Silver creek appointment line</td> <td><a href="#" class="app-link">(408)960-0660</a></td></tr>
-                                <tr><td>Medical Meridian eligibility </td><td> <a href="#" class="app-link">(408)960-0660</a></td></tr>
-                                <tr><td>Dental Meridian </td><td> <a href="#" class="app-link">(408)960-0660</a></td></tr>
-                                <tr><td>Dental Forest </td><td> <a href="#" class="app-link">(408)960-0660</a></td></tr>
-                                <tr><td>Medical Pediatrics Clinic </td><td> <a href="#" class="app-link">(408)960-0660</a></td></tr>
-                                <tr><td>Counselling 14th St Family resource center </td><td> <a href="#" class="app-link">(408)960-0660</a></td></tr>
-                                <tr><td>Medical Silver Creek - General information </td><td> <a href="#" class="app-link">(408)960-0660</a></td></tr>
-                                <tr><td>Counselling 14th St Adult Mental Health </td><td> <a href="#" class="app-link">(408)960-0660</a></td></tr>
-                                <tr><td>Counselling East Santa Clara st </td><td> <a href="#" class="app-link">(408)960-0660</a></td></tr>
-                                <tr><td>IHC agency operator </td><td> <a href="#" class="app-link">(408)960-0660</a></td></tr>
-                                <tr><td>IHC Billing Department </td><td> <a href="#" class="app-link">(408)960-0660</a></td></tr>
+                                <tr>
+                                    <td>Medical Meridian/Silver creek appointment line</td>
+                                    <td><a href="#" class="app-link">(408)960-0660</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Medical Meridian eligibility </td>
+                                    <td> <a href="#" class="app-link">(408)960-0660</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Dental Meridian </td>
+                                    <td> <a href="#" class="app-link">(408)960-0660</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Dental Forest </td>
+                                    <td> <a href="#" class="app-link">(408)960-0660</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Medical Pediatrics Clinic </td>
+                                    <td> <a href="#" class="app-link">(408)960-0660</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Counselling 14th St Family resource center </td>
+                                    <td> <a href="#" class="app-link">(408)960-0660</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Medical Silver Creek - General information </td>
+                                    <td> <a href="#" class="app-link">(408)960-0660</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Counselling 14th St Adult Mental Health </td>
+                                    <td> <a href="#" class="app-link">(408)960-0660</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Counselling East Santa Clara st </td>
+                                    <td> <a href="#" class="app-link">(408)960-0660</a></td>
+                                </tr>
+                                <tr>
+                                    <td>IHC agency operator </td>
+                                    <td> <a href="#" class="app-link">(408)960-0660</a></td>
+                                </tr>
+                                <tr>
+                                    <td>IHC Billing Department </td>
+                                    <td> <a href="#" class="app-link">(408)960-0660</a></td>
+                                </tr>
                             </table>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="row">
+        <img src="../../assets/images/sponsor_1.png" class="my-4 mx-auto border-success border">
+        <img src="../../assets/images/sponsor_2.png" class="my-4 mx-auto border-success border">
+        <img src="../../assets/images/sponsor_3.png" class="my-4 mx-auto border-success border">
+        <img src="../../assets/images/sponsor_4.png" class="my-4 mx-auto border-success border">
+        <img src="../../assets/images/sponsor_5.png" class="my-4 mx-auto border-success border">
     </div>
 </div>

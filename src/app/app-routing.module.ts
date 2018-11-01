@@ -38,6 +38,7 @@ import { IhcWishListComponent } from './get-involved/ihc-wish-list/ihc-wish-list
 import { DentalAppointmentComponent } from './dental-appointment/dental-appointment.component';
 import { CitaDentistaComponent } from './cita-dentista/cita-dentista.component';
 import { CitaMedicaComponent } from './cita-medica/cita-medica.component';
+import { HealthcareNewsComponent } from './home/healthcare-news/healthcare-news.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -78,6 +79,7 @@ const routes: Routes = [
   {path: 'dental-appointment', component: DentalAppointmentComponent},
   {path: 'cita-dentista', component: CitaDentistaComponent},
   {path: 'cita-medica', component: CitaMedicaComponent},
+  {path: 'healthcare-news', component: HealthcareNewsComponent},
 ];
 
 @NgModule({

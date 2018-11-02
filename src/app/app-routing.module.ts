@@ -39,6 +39,7 @@ import { DentalAppointmentComponent } from './dental-appointment/dental-appointm
 import { CitaDentistaComponent } from './cita-dentista/cita-dentista.component';
 import { CitaMedicaComponent } from './cita-medica/cita-medica.component';
 import { HealthcareNewsComponent } from './home/healthcare-news/healthcare-news.component';
+import { CalendarComponent } from './get-involved/calendar/calendar.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -80,6 +81,7 @@ const routes: Routes = [
   {path: 'cita-dentista', component: CitaDentistaComponent},
   {path: 'cita-medica', component: CitaMedicaComponent},
   {path: 'healthcare-news', component: HealthcareNewsComponent},
+  {path: 'calendar', component: CalendarComponent},
 ];
 
 @NgModule({

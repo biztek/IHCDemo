@@ -127,7 +127,7 @@ a:hover {
         }
     }
 
-    .section-carousel {
+    .section1 {
         height: auto;
         position: relative;
         font-family: $font;
@@ -141,7 +141,6 @@ a:hover {
         }
         .carousel-item{
             border: 5px solid $green;
-            border-radius: 10px;
             img {
                 height: 450px;
             }

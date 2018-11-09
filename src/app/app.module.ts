@@ -63,6 +63,7 @@ import { DentalAppointmentComponent } from './dental-appointment/dental-appointm
 import { CitaDentistaComponent } from './cita-dentista/cita-dentista.component';
 import { CitaMedicaComponent } from './cita-medica/cita-medica.component';
 import { HealthcareNewsComponent } from './home/healthcare-news/healthcare-news.component';
+import { CalendarComponent } from './get-involved/calendar/calendar.component';
 
 
 @NgModule({
@@ -108,7 +109,8 @@ import { HealthcareNewsComponent } from './home/healthcare-news/healthcare-news.
     DentalAppointmentComponent,
     CitaDentistaComponent,
     CitaMedicaComponent,
-    HealthcareNewsComponent
+    HealthcareNewsComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
